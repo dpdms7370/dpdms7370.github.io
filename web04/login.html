@@ -73,33 +73,29 @@ ul { list-style:none; }
         #gnb .subDepth li > a { display: block;  margin: 10px 0; padding: 0 30px; color: #666; font-size: 16px;} /* 서브메뉴의 크기를 조정 */
         
         a { color: inherit; text-decoration: none;}
-        
         #gnb .list > ul:after { content: ""; display: block; clear: both;}
         #gnb:after { content: ""; position: absolute; top: 0; right: 0; left: 0; height: 70px; background: #fbfbfb;}
         .table_name {padding-top: 40px; text-align:center;  }
-        .content {padding-top: 40px; text-align:center; }
+        .content {padding-top:80px; text-align:center; }
         </style>
-        <header id="header" class="header"></header>
-         
-      
-<div class="content" class="panel-body">
-	<div class="container-fluid">
-		<h2 class="title">로그인</h2>
-		<form id="frm1" name="login" action="loginPro.jsp" method="post" role="form" class="form-horizontal">
-			<ul class="form_wrap">
-				<li><input type="text" class="indata" id="uid" name="uid" placeholder="아이디 입력" required autofocus></li>
-				<li><input type="password" class="indata" id="upw" name="upw" placeholder="비밀번호 입력" required></li>
-				<li class="btn_frame" style="padding-left:10px">
-					<input type="reset" value="취소" id="reset" class="btn btn-primary">
-                    <input type="submit" value="로그인" id="submit" class="btn btn-primary"> &nbsp; &nbsp; &nbsp; &nbsp;
-					
-				</li>
-			</ul>
-		</form>	
-	</div>
-</div>
-<footer id="ft" class="footer"></footer>
-	<!-- 푸터를 불러오세요. -->
+        <header id="header" class="header"></header>              
+            <div class="content" class="panel-body">
+                <div class="container-fluid">
+                    <h2 class="title">로그인</h2>
+                    <form id="frm1" name="login" action="loginPro.jsp" method="post" role="form" class="form-horizontal">
+                        <ul class="form_wrap">
+                            <li><input type="text" class="indata" id="uid" name="uid" placeholder="아이디 입력" required autofocus></li>
+                            <li><input type="password" class="indata" id="upw" name="upw" placeholder="비밀번호 입력" required></li>
+                            <li class="btn_frame" style="padding-left:10px">
+                                <input type="reset" value="취소" id="reset" class="btn btn-primary">
+                                <input type="submit" value="로그인" id="submit" class="btn btn-primary"> &nbsp; &nbsp; &nbsp; &nbsp;
+                                
+                            </li>
+                        </ul>
+                    </form>	
+                </div>
+            </div>
+        <footer id="ft" class="footer"></footer>
 </div>
 <script>
 	$(function(){
