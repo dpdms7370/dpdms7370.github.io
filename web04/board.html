@@ -56,9 +56,6 @@
     .board_list .tit {  text-align: left; }
 
     .board_list .tit:hover {  text-decoration: underline; }
-    .btnf{clear: both; margin: 0; padding: auto; float: right; margin-bottom: 10px; padding: 20px; }
-    .btn a {padding: 10px; }
-    
 </style>
 <html>
     <title>게시판 목록</title>
@@ -66,9 +63,6 @@
     <body>
         <div class="board_wrap">
             <h2 class="btit">공지사항</h2><br><br>
-            <div class="btnf">
-                <button class="btn"><a href="boardWrite.html">글쓰기</a></button>
-            </div>
             <table class="board_list">
                 <caption>게시판 목록</caption>
                 <thead>
@@ -123,7 +117,6 @@
                 </tbody>
             </table>
         </div>
-     
         <script> 
             $(function(){
               $("#header").load("header.html"); 
