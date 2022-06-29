@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 메타 데이터 -->
+    <meta name="url" content="https://www.risingeyes.com/index.html">
+    <meta name="description" content="고양시 주엽역 위치, 백내장, 노안, 안심렌즈, 시력검사, 안과">
+    <meta name="keywords" content="고양시 주엽역 위치, 백내장, 노안, 안심렌즈, 시력검사, 안과">
+    <!-- 오픈 그래프 -->
+    <meta property="og:url" content="https://www.risingeyes.com/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="해오름안과">
+    <meta property="og:description" content="고양시 주엽역 위치, 백내장, 노안, 안심렌즈, 시력검사, 안과">
+    <meta property="og:site_name" content="해오름안과">
+    <!-- jquery 임포트 -->
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+	<!-- 메인 화면의 스타일들을 넣어놓은 common.css를 불러옵니다. -->
+	<link rel="stylesheet" href="common.css">
+	<link rel="stylesheet" href="soomstyle.css">
+     <!-- 기본 플러그인 연결 -->
+     <script src="https://code.jquery.com/jquery-latest.js"></script>
+     <!-- 웹 폰트/폰트 모듈 연결 -->
+     <!-- font-family: 'Noto Sans KR', sans-serif; -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&display=swap" rel="stylesheet">
+     <!-- 웹 아이콘 연결 -->
+     <!-- XEIcon -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <title>해오름안과</title>
+    <style>
+        /* 기본 - k */
+        * {margin: 0; padding: 0;}
+        html, body {width: 100%; font-family: 'Noto Sans KR', sans-serif; font-weight: lighter;}
+        a {text-decoration: none; font-weight: lighter;}
+        ul {list-style: none;}
+        i[class*='xi'] { font-size:28px;}
+        i[class*='xi']:hover {text-shadow: 1px 1px 1px; font-weight: normal; transition:0.2s;}
+
+
+
+        /* 헤더 - m */
+        .align, #header .logo:after, #gnb .login:after, #footer .footSns:after, .chkTitList .wrapBlueLine .box:after {
+            content: ""; display: inline-block; height: 100%; vertical-align: middle;}
+
+        #header { position: relative; background: #fff;}
+        #header .inner { position: relative; max-width: 1400px; margin: 0 auto;}
+        #header .logo { height: 100px; font: 0/0 a;}
+        #header .logo a { display: inline-block; vertical-align: middle;}
+        #header .logo img { height: 52px; border: 0; vertical-align: top;}
+
+        #gnb { position: absolute; z-index: 100; top: 100px; left: 0; width: 100%; background: #fff;
+            border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;}
+
+        /* login - m */
+        #gnb .login { position: absolute; z-index: 2; top: -75px; right: 50%; height: 46px; margin-right: -700px;
+            padding: 0 20px; border: 2px solid #eee; border-radius: 46px;}
+        #gnb .login .sign:before { content: ""; display: inline-block; width: 15px; height: 18px; margin-right: 10px;
+            background: url(./images/icon_login.png) no-repeat; vertical-align: -3px;}
+        #gnb .login a { color: #000; font-size: 14px; font-weight: 500;}
+        #gnb .login span:last-child { position: relative; margin-left: 10px; padding-left: 12px;}
+        #gnb .login span:last-child:before { content: ""; position: absolute; top: 8px; left: 0; height: 16px;
+            border-left: 1px solid #ddd;}
+        #gnb .login a { color: #000; font-size: 14px; font-weight: 500;}
+        #gnb .login span:last-child { position: relative; margin-left: 10px; padding-left: 12px;}
+
+        /* main-manu - m */
+        #gnb .list { position: relative; z-index: 2; max-width: 1400px; margin: 0 auto;}
+        #gnb .list > ul > li:first-child { border-left: 1px solid #ddd;}   /* 선을 그었음 */
+        #gnb .list > ul > li { float: left; width: 14.28%; height: 100%; box-sizing: border-box;} /* float-left로 옆으로 정렬시키고 각 와이드 14퍼만큼 박싱해서 정렬 / 메뉴가 줄어들으시면 이곳을 수정하시면 됩니다.*/
+        li { list-style: none;} /* 한번더 초기화 */
+        #gnb .list > ul > li > a { display: block; background: #fbfbfb; border-right: 1px solid #ddd; text-align: center;
+            color: #000; font-size: 18px; font-weight: 400; line-height: 70px;}     /* 메인메뉴와 서브메뉴를 나누는 구간 */
+
+        #sub-menu { opacity: 0; visibility: hidden; transition: all 0.15s ease-in; margin: 0 auto; background-color: #fff;}	/* 서브메뉴를 숨기는 */
+        #main-menu:hover #sub-menu { opacity: 1; visibility: visible;}		/* 서브메뉴를 보이게하는 */
+
+        #gnb .subDepth { display: block !important;}        /* !important를 사용해 다음에 오는 스타일에 영향을 받지않도록 설정했다 */
+        #gnb .subDepth { height: 0;  transition: all .3s; box-sizing: border-box;}    /* ;서브메뉴를 숨기고 on/off 함수를 사용하여 볼수있도록 했다*/
+        #gnb .subDepth > ul { padding: 10px 0 0; border-right: 1px solid #ddd;}
+        #gnb .subDepth li > a { display: block;  margin: 10px 0; padding: 0 30px; color: #666; font-size: 16px;} /* 서브메뉴의 크기를 조정 */
+
+        a { color: inherit; text-decoration: none;}
+
+        #gnb .list > ul:after { content: ""; display: block; clear: both;}
+        #gnb:after { content: ""; position: absolute; top: 0; right: 0; left: 0; height: 70px; background: #fbfbfb;}
+        
+
+
+        /* intro - k*/
+        /* intro-sub manu - k*/
+        .page { clear:both; min-height:100vh; display:none; width: 100%; }
+        
+        .k_content_nav { clear: both; width: 100%; height: 48px; border-bottom:3px solid #f1f1f1; }
+        .k_bread_wrap { width: 1400px; margin: 0 auto; }
+        .k_bread { height: 48px; line-height: 48px;  }
+        .k_bread li { float:left; padding-right: 30px; }
+        .k_bread li:after { content:">"; padding-left: 24px; }
+        .k_bread li:last-child::after { content: ""; }
+        .sel {border: 0px; width: auto;}
+        .k_sub_ban img{display: block; width: 100%; height: 24vh;}
+
+        .k_content_vs {margin-top: 2.4%;}
+        .k_sub_ban {background-image: url(./img/intro/page1/bg_sub_top1.jpg); width: 100%; height: 20vh;}
+        .k_tit_box { z-index:30; color: white; padding-top: 2%; padding-left: 13.5%;}
+        .k_tit_box .k_sub_tit { font-size:30px; }
+        .k_tit_box .k_sub_com { font-size:16px; padding-top: 10px; }
+        .k_content_main_wrap{clear: both; width: 100%;  min-height:50vh;}
+        .k_content_main {width: 1400px; margin: 0 auto; padding-top: 3%;}
+        .k_content_main h1{font-size: 40px;}
+        .k_main_menu>ul{padding-top: 2%; display:table; width: 100%;}
+        .k_main_menu>ul>li{display: table-cell; height: 7vh; font-size: 16px; border: 1px solid rgb(206, 206, 206); width: 12.5%; background-color: rgb(242, 242, 242); z-index: 10; text-align: center; vertical-align: middle; cursor: pointer;}
+        .page:target { display:block; }
+        
+        /* intro-left img - k*/
+        .k_main_body {width: 1100px; margin: 0 auto; margin-top: 5%;}
+        .k_main_img {float: left; width: 35%; border: 1px solid rgb(203, 203, 203); margin-right: 3%; height: 506px;}
+        .k_main_img img {width: 100%; height: 100%;}
+        
+        /* intro-right info - k*/
+        .k_info {float: left; width: 62%; }
+        .k_name{clear: both; width: 100%; border-bottom: 2px solid rgb(0, 83, 178); padding-bottom: 20px;  color: #000; height: 10vh;}
+        .k_name>b{float: left; font-size: 40px; font-weight:bold; margin-right: 20px;}
+        .k_pos{float: left; font-size: 28px; font-weight: 500;left: 140px; padding-top: 2.4%;}
+        .k_spec{float: right; font-size: 20px; font-weight:bolder; color:rgb(15, 75, 165); padding-top: 3.8%;}
+        .k_roll {clear: both; position: relative; width: 100%; border-bottom: 1px solid rgb(209, 209, 209); padding-top: 3.5%; padding-bottom: 3.5%;}
+        .k_tit {color: #000; font-weight: bold; font-size: 1.2em; padding-right: 10.7%; }
+        .k_tit2 {color: #000; font-weight: bold; font-size: 1.2em; padding-right: 8%; }
+        /* intro-right info table - k*/
+        .k_info_table{display: table; clear: both; width: 100%; height: 263px; }
+        .k_info_table tr{display: table-row;}
+        .k_info_table tr th, .k_info_table tr td{display: table-cell; border: 1px solid rgb(174, 174, 174); width: 14.2857%; vertical-align: middle; text-align: center;}
+        .k_info_table tr th{display: table-cell; border-bottom: none;}
+        .k_info_table tr .k_left{text-align: left; padding-left: 10px;}
+        /* intro-right button - k*/
+        .k_btn_group{text-align: right; margin-top: 2%; margin-bottom: 10%; }
+        .button{border: 1px solid rgb(158, 158, 158); }
+
+        /* intro-page2 - k*/
+        .k_p2_title {text-align: center; color:#1f75b0; letter-spacing: 10px;}
+        .k_p2_title > h1 {padding-bottom: 1.5%;}
+        .k_p2_content {width: 617px; margin: 0 auto; margin-top: 5%;}
+        .k_p2_content img {width: 100%;}
+        .k_p2_content2{clear: both; width: 100%; margin-top: 5%;}
+        .k_p2_content2 .k_item1 {background-image: url(./img/intro/page2/doctor1.jpg); width: 100%; height: 144vh;}
+        .k_p2_content2 .k_item1 ul {width: 1400px; margin: 0 auto;}
+        .k_p2_content2 .k_item1 h1 {color: white; text-align: center; font-size: 3em; padding-top: 5%;}
+        .k_p2_content2 .k_item1 p {color:#bcddf2; letter-spacing: 10px; text-align: center; font-size: 1.5em; padding-top: 0.5%; margin-bottom: 3%;}
+        .k_p2_content2 .k_item1 .k_item1_s {width: 1160px; margin: 0 auto;}
+        .k_p2_content2 .k_item1 .k_item1_s > ul > li {float: left; width: 360px; margin-right: 3%; background-color: #fff; height: 450px; margin-bottom: 3%; }
+        .k_p2_content2 .k_item1 .k_item1_s > ul > li img {width: 100%; height: 230px; padding-bottom: 2%;}
+        .k_p2_content2 .k_item1 .k_item1_s > ul > li:last-child {margin-right: 0;}
+        .k_item1 .k_item1_s h2{color:#1f75b0; font-size: 24px; padding-left: 10px; text-align: left; padding-bottom: 2%;}
+        .k_item1 .k_item1_s p{color:black; font-size: 20px; letter-spacing: normal; padding-left: 10px; text-align: left;}
+        .k_p2_content3 {clear: both; width: 1160px; margin: 0 auto; margin-top: 5%; margin-bottom: 5%;}
+        .k_p2_content3 h2{font-size: 40px;}
+        .k_p2_content3 h2:nth-child(2){font-size: 40px; color:#1f75b0; font-weight: 800; padding-bottom: 3%;}
+        .k_p2_content3 p{font-size: 16px;}
+        .k_p2_content3 p b {color:#1f75b0; font-weight: 500;}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header id="header" onmouseleave="" class="">
+            <div class="inner">
+                <h1 class="logo"><a href="/"><img src="./img/logo.gif" alt="해오름안과"></a></h1>
+                <button type="button" class="btnMenu"><span>MENU</span></button>
+            </div>
+            <nav id="gnb">
+                <div class="login">
+                    <span class="sign"><a href="login.html">로그인</a></span>
+                        <span><a href="join2.html">회원가입</a></span>
+                </div>
+                <div class="list" >
+                    <ul id="main-menu" >
+                        <li class=""><a href="./intro/intro.#page1">본원 소개</a>
+                            <div class="subDepth">
+                                <ul id="sub-menu" style="border-left:  1px solid #ddd;">
+                                            <li class=""><a href="./intro/intro.html#page1">인사말</a></li>
+                                            <li class=""><a href="./intro/intro.html#page2">진료안내</a></li>
+                                            <li class=""><a href="./intro/intro.html#page3">병원둘러보기</a></li>
+                                            <li class=""><a href="./intro/intro.html#page4">병원보유장비</a></li>
+                                            <li class=""><a href="./intro/intro.html#page5">찾아오시는길</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class=""><a href="./menu1/subpage1.html">시력교정</a>
+                            <div class="subDepth">
+                                <ul id="sub-menu">
+                                    <li class=""><a href="./menu1/subpage1.html#page1">라식</a></li>
+                                    <li class=""><a href="./menu1/subpage1.html#page2">라섹</a></li>
+                                    <li class=""><a href="./menu1/subpage1.html#page3">웨이브프론트</a></li>
+                                    <li class=""><a href="./menu1/subpage1.html#page4">에피라식</a></li>
+                                    <li class=""><a href="./menu1/subpage1.html#page4">스마일라식</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class=""><a href="./menu2/subpage2.html#page1">안내렌즈</a>
+                            <div class="subDepth">
+                                <ul id="sub-menu">
+                                    <li class=""><a href="./menu2/subpage2.html#page1">ICL</a></li>
+                                    <li class=""><a href="./menu2/subpage2.html#page2">TORIC ICL</a></li>
+                                    <li class=""><a href="./menu2/subpage2.html#page3">아쿠아 ICL</a></li>
+                                    <li class=""><a href="./menu2/subpage2.html#page3">메뉴4</a></li>
+                                    <li class=""><a href="./menu2/subpage2.html#page3">메뉴5</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class=""><a href="./menu3/subpage3.html#page1">백내장*노안</a>
+                            <div class="subDepth">
+                                <ul id="sub-menu">
+                                    <li class=""><a href="./menu3/subpage3.html#page1">백내장이란</a></li>
+                                    <li class=""><a href="./menu3/subpage3.html#page2">백내장수술법</a></li>
+                                    <li class=""><a href="./menu3/subpage3.html#page3">인공수정체</a></li>
+                                    <li class=""><a href="./menu3/subpage3.html#page4">수술후관리</a></li>
+                                    <li class=""><a href="./menu3/subpage3.html#page5">백내장수술후관리</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class=""><a href="./menu4/subpage4.html#page1">녹내장*망막</a>
+                            <div class="subDepth">
+                                <ul id="sub-menu">
+                                    <li class=""><a href="./menu4/subpage4.html#page1">녹내장이란</a></li>
+                                    <li class=""><a href="./menu4/subpage4.html#page2">망막이란</a></li>
+                                    <li class=""><a href="./menu4/subpage4.html#page1">녹내장수술법</a></li>
+                                    <li class=""><a href="./menu4/subpage4.html#page2">망막관리볍</a></li>
+                                    <li class=""><a href="./menu4/subpage4.html#page1">녹내장관리법</a></li>
+                                   
+                    
+                                </ul>
+                            </div>
+                        </li>
+                        <li class=""><a href="./menu5/subpage5.html#page1">콘텍트렌즈</a>
+                            <div class="subDepth">
+                                <ul id="sub-menu">
+                                    <li class=""><a href="./menu5/subpage5.html#page1">드림렌즈</a></li>
+                                    <li class=""><a href="./menu5/subpage5.html#page2">소프트렌즈</a></li>
+                                    <li class=""><a href="./menu5/subpage5.html#page3">RGP렌즈</a></li>
+                                    <li class=""><a href="./menu5/subpage5.html#page4">원추각막</a></li>
+                                    <li class=""><a href="./menu5/subpage5.html#page4">유니콘렌즈</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class=""><a href="./notice/notice.html">안내 및 후기</a>
+                            <div class="subDepth">
+                                <ul id="sub-menu">
+                                    <li class=""><a href="./notice/notice.html#page1">안내</a></li>
+                                    <li class=""><a href="./notice/notice.html#page2">치료후기</a></li>
+                                    <li class=""><a href="./notice/notice.html#page3">QNA</a></li>
+                                    <li class=""><a href="./notice/notice.html#page3">기타등등</a></li>
+                                    <li class=""><a href="./notice/notice.html#page3">기타등등</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    <!-- intro 영역 -->    
+    <div id="k_content">
+        <section class="page" id="page1">
+            <div class="k_content_vs">
+                <figure class="k_sub_ban">
+                    <!-- <img src="./img/intro/page1/bg_sub_top1.jpg" alt="img"> -->
+                    <div class="k_tit_box">
+                        <h2 class="k_sub_tit">병원소개</h2>
+                        <p class="k_sub_com">새로운 광명을 찾아주는 해오름안과에 방문해 주셔서 감사드립니다.</p>
+                    </div>
+                </figure>
+                <div class="k_content_nav">
+                    <div class="k_bread_wrap">
+                        <ul class="k_bread">
+                            <li class="k_item1">
+                                <a href="index.html" class="home" >HOME</a>
+                            </li>
+                            <li class="k_item2">intro</li>
+                            <li class="k_item3">
+                                <select name="sel" id="sel1" class="sel">
+                                    <option value="intro.html#page1" selected>page1</option>
+                                    <option value="intro.html#page2">page2</option>
+                                    <option value="intro.html#page3">page3</option>
+                                    <option value="intro.html#page4">page4</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="k_content_main_wrap">
+                <div class="k_content_main">
+                    <div class="k_main_title"><h1>의료진 소개</h1></div>
+                    <div class="k_main_menu">
+                        <ul>
+                            <li id="menu1">menu1</li>
+                            <li id="menu2">menu2</li>
+                            <li id="menu3">menu3</li>
+                            <li id="menu4">menu4</li>
+                            <li id="menu5">menu5</li>
+                            <li id="menu6">menu6</li>
+                            <li id="menu7">menu7</li>
+                            <li id="menu8">menu8</li>
+                        </ul>
+                    </div>
+                    <article class="k_main_body">
+                        <div class="k_main_img">
+                            <img src="./img/owner.gif" alt="doctor">
+                        </div>
+                        <div class="k_info">
+                            <p class="k_name">
+                                <b>서원선</b>
+                                <span class="k_pos">원장</span>
+                                <span class="k_spec">안과 전문의</span>
+                            </p>
+                            <p class="k_roll">
+                                <b class="k_tit">진료과</b>
+                                " 눈 센터 "
+                            </p>
+                            <p class="k_roll" style="border-bottom: none;">
+                                <b class="k_tit2">전문분야</b>
+                                " 백내장, 노안, 라식, 라섹 "
+                            </p>
+                            <table class="k_info_table">
+                                <tbody>
+                                    <tr>
+                                        <th>시간</th>
+                                        <th>월</th>
+                                        <th>화</th>
+                                        <th>수</th>
+                                        <th>목</th>
+                                        <th>금</th>
+                                        <th>토</th>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>오전</strong></td>
+                                        <td>진료</td>
+                                        <td>진료</td>
+                                        <td>-</td>
+                                        <td>진료</td>
+                                        <td>진료</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>오후</strong></td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>비고</strong></td>
+                                        <td colspan="6" class="k_left">
+                                            <p>※ 휴진 : 매주 일요일 휴진, 8/15 ~ 8/25 휴가</p>
+                                            <!-- <p>※ 동헌종 원장 진료는 예약제로 진행되며, 당일예약/접수가 어려운 점 알려드립니다.</p> -->
+                                            <p>※ 당일 예약은 어려울 수 있습니다.</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="k_btn_group">
+                                <input type="button" value="주요경력" class="button"/>
+                                <input type="button" value="온라인예약" class="button" style="background-color: #dda65e; color: #eee;"/>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- <article class="k_main_body" id="a">
+                        <div class="k_main_img">
+                            <img src="./img/intro/page1/doctor01.jpg" alt="doctor">
+                        </div>
+                        <div class="k_info">
+                            <p class="k_name">
+                                <b>동헌종2</b>
+                                <span class="k_pos">원장</span>
+                                <span class="k_spec">이비인후과 전문의</span>
+                            </p>
+                            <p class="k_roll">
+                                <b class="k_tit">진료과</b>
+                                " 코 센터 "
+                            </p>
+                            <p class="k_roll" style="border-bottom: none;">
+                                <b class="k_tit2">전문분야</b>
+                                " 축농증 내시경수술, 알레르기비염, 비중격곡증 "
+                            </p>
+                            <table class="k_info_table">
+                                <tbody>
+                                    <tr>
+                                        <th>시간</th>
+                                        <th>월</th>
+                                        <th>화</th>
+                                        <th>수</th>
+                                        <th>목</th>
+                                        <th>금</th>
+                                        <th>토</th>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>오전</strong></td>
+                                        <td>진료</td>
+                                        <td>진료</td>
+                                        <td>-</td>
+                                        <td>진료</td>
+                                        <td>진료</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>오후</strong></td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>비고</strong></td>
+                                        <td colspan="6" class="k_left">
+                                            <p>※ 휴진 : 매주 토요일 휴진, 8/8(월) ~ 8/13(토) 휴진</p>
+                                            <p>※ 동헌종 원장 진료는 예약제로 진행되며, 당일예약/접수가 어려운 점 알려드립니다.</p>
+                                            <p>※ 응급 수술 등에 의해 진료시간이 변경될 수 있으니 예약 및 내원 시 확인바랍니다.</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="k_btn_group">
+                                <input type="button" value="주요경력" class="button"/>
+                                <input type="button" value="온라인예약" class="button" style="background-color: #1f75b0; color: #eee;"/>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="k_main_body"  id="a">
+                        <div class="k_main_img">
+                            <img src="./img/intro/page1/doctor01.jpg" alt="doctor">
+                        </div>
+                        <div class="k_info">
+                            <p class="k_name">
+                                <b>동헌종3</b>
+                                <span class="k_pos">원장</span>
+                                <span class="k_spec">이비인후과 전문의</span>
+                            </p>
+                            <p class="k_roll">
+                                <b class="k_tit">진료과</b>
+                                " 코 센터 "
+                            </p>
+                            <p class="k_roll" style="border-bottom: none;"">
+                                <b class="k_tit2">전문분야</b>
+                                " 축농증 내시경수술, 알레르기비염, 비중격곡증 "
+                            </p>
+                            <table class="k_info_table">
+                                <tbody>
+                                    <tr>
+                                        <th>시간</th>
+                                        <th>월</th>
+                                        <th>화</th>
+                                        <th>수</th>
+                                        <th>목</th>
+                                        <th>금</th>
+                                        <th>토</th>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>오전</strong></td>
+                                        <td>진료</td>
+                                        <td>진료</td>
+                                        <td>-</td>
+                                        <td>진료</td>
+                                        <td>진료</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>오후</strong></td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>비고</strong></td>
+                                        <td colspan="6" class="k_left">
+                                            <p>※ 휴진 : 매주 토요일 휴진, 8/8(월) ~ 8/13(토) 휴진</p>
+                                            <p>※ 동헌종 원장 진료는 예약제로 진행되며, 당일예약/접수가 어려운 점 알려드립니다.</p>
+                                            <p>※ 응급 수술 등에 의해 진료시간이 변경될 수 있으니 예약 및 내원 시 확인바랍니다.</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="k_btn_group">
+                                <input type="button" value="주요경력" class="button"/>
+                                <input type="button" value="온라인예약" class="button" style="background-color: #1f75b0; color: #eee;"/>
+                            </div>
+                        </div>
+                    </article> -->
+                    <!-- <article class="k_main_body" id="b">
+                        <div class="k_main_img">
+                            <img src="./img/intro/page1/doctor01.jpg" alt="doctor">
+                        </div>
+                        <div class="k_info">
+                            <p class="k_name">
+                                <b>동헌종4</b>
+                                <span class="k_pos">원장</span>
+                                <span class="k_spec">이비인후과 전문의</span>
+                            </p>
+                            <p class="k_roll">
+                                <b class="k_tit">진료과</b>
+                                " 코 센터 "
+                            </p>
+                            <p class="k_roll" style="border-bottom: none;"">
+                                <b class="k_tit2">전문분야</b>
+                                " 축농증 내시경수술, 알레르기비염, 비중격곡증 "
+                            </p>
+                            <table class="k_info_table">
+                                <tbody>
+                                    <tr>
+                                        <th>시간</th>
+                                        <th>월</th>
+                                        <th>화</th>
+                                        <th>수</th>
+                                        <th>목</th>
+                                        <th>금</th>
+                                        <th>토</th>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>오전</strong></td>
+                                        <td>진료</td>
+                                        <td>진료</td>
+                                        <td>-</td>
+                                        <td>진료</td>
+                                        <td>진료</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>오후</strong></td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>비고</strong></td>
+                                        <td colspan="6" class="k_left">
+                                            <p>※ 휴진 : 매주 토요일 휴진, 8/8(월) ~ 8/13(토) 휴진</p>
+                                            <p>※ 동헌종 원장 진료는 예약제로 진행되며, 당일예약/접수가 어려운 점 알려드립니다.</p>
+                                            <p>※ 응급 수술 등에 의해 진료시간이 변경될 수 있으니 예약 및 내원 시 확인바랍니다.</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="k_btn_group">
+                                <input type="button" value="주요경력" class="button"/>
+                                <input type="button" value="온라인예약" class="button" style="background-color: #1f75b0; color: #eee;"/>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="k_main_body" id="b">
+                        <div class="k_main_img">
+                            <img src="./img/intro/page1/doctor01.jpg" alt="doctor">
+                        </div>
+                        <div class="k_info">
+                            <p class="k_name">
+                                <b>동헌종5</b>
+                                <span class="k_pos">원장</span>
+                                <span class="k_spec">이비인후과 전문의</span>
+                            </p>
+                            <p class="k_roll">
+                                <b class="k_tit">진료과</b>
+                                " 코 센터 "
+                            </p>
+                            <p class="k_roll" style="border-bottom: none;"">
+                                <b class="k_tit2">전문분야</b>
+                                " 축농증 내시경수술, 알레르기비염, 비중격곡증 "
+                            </p>
+                            <table class="k_info_table">
+                                <tbody>
+                                    <tr>
+                                        <th>시간</th>
+                                        <th>월</th>
+                                        <th>화</th>
+                                        <th>수</th>
+                                        <th>목</th>
+                                        <th>금</th>
+                                        <th>토</th>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>오전</strong></td>
+                                        <td>진료</td>
+                                        <td>진료</td>
+                                        <td>-</td>
+                                        <td>진료</td>
+                                        <td>진료</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>오후</strong></td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>비고</strong></td>
+                                        <td colspan="6" class="k_left">
+                                            <p>※ 휴진 : 매주 토요일 휴진, 8/8(월) ~ 8/13(토) 휴진</p>
+                                            <p>※ 동헌종 원장 진료는 예약제로 진행되며, 당일예약/접수가 어려운 점 알려드립니다.</p>
+                                            <p>※ 응급 수술 등에 의해 진료시간이 변경될 수 있으니 예약 및 내원 시 확인바랍니다.</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="k_btn_group">
+                                <input type="button" value="주요경력" class="button"/>
+                                <input type="button" value="온라인예약" class="button" style="background-color: #1f75b0; color: #eee;"/>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="k_main_body" id="b">
+                        <div class="k_main_img">
+                            <img src="./img/intro/page1/doctor01.jpg" alt="doctor">
+                        </div>
+                        <div class="k_info">
+                            <p class="k_name">
+                                <b>동헌종6</b>
+                                <span class="k_pos">원장</span>
+                                <span class="k_spec">이비인후과 전문의</span>
+                            </p>
+                            <p class="k_roll">
+                                <b class="k_tit">진료과</b>
+                                " 코 센터 "
+                            </p>
+                            <p class="k_roll" style="border-bottom: none;"">
+                                <b class="k_tit2">전문분야</b>
+                                " 축농증 내시경수술, 알레르기비염, 비중격곡증 "
+                            </p>
+                            <table class="k_info_table">
+                                <tbody>
+                                    <tr>
+                                        <th>시간</th>
+                                        <th>월</th>
+                                        <th>화</th>
+                                        <th>수</th>
+                                        <th>목</th>
+                                        <th>금</th>
+                                        <th>토</th>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>오전</strong></td>
+                                        <td>진료</td>
+                                        <td>진료</td>
+                                        <td>-</td>
+                                        <td>진료</td>
+                                        <td>진료</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>오후</strong></td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>비고</strong></td>
+                                        <td colspan="6" class="k_left">
+                                            <p>※ 휴진 : 매주 토요일 휴진, 8/8(월) ~ 8/13(토) 휴진</p>
+                                            <p>※ 동헌종 원장 진료는 예약제로 진행되며, 당일예약/접수가 어려운 점 알려드립니다.</p>
+                                            <p>※ 응급 수술 등에 의해 진료시간이 변경될 수 있으니 예약 및 내원 시 확인바랍니다.</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="k_btn_group">
+                                <input type="button" value="주요경력" class="button"/>
+                                <input type="button" value="온라인예약" class="button" style="background-color: #1f75b0; color: #eee;"/>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="k_main_body" id="c">
+                        <div class="k_main_img">
+                            <img src="./img/intro/page1/doctor01.jpg" alt="doctor">
+                        </div>
+                        <div class="k_info">
+                            <p class="k_name">
+                                <b>동헌종7</b>
+                                <span class="k_pos">원장</span>
+                                <span class="k_spec">이비인후과 전문의</span>
+                            </p>
+                            <p class="k_roll">
+                                <b class="k_tit">진료과</b>
+                                " 코 센터 "
+                            </p>
+                            <p class="k_roll" style="border-bottom: none;"">
+                                <b class="k_tit2">전문분야</b>
+                                " 축농증 내시경수술, 알레르기비염, 비중격곡증 "
+                            </p>
+                            <table class="k_info_table">
+                                <tbody>
+                                    <tr>
+                                        <th>시간</th>
+                                        <th>월</th>
+                                        <th>화</th>
+                                        <th>수</th>
+                                        <th>목</th>
+                                        <th>금</th>
+                                        <th>토</th>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>오전</strong></td>
+                                        <td>진료</td>
+                                        <td>진료</td>
+                                        <td>-</td>
+                                        <td>진료</td>
+                                        <td>진료</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>오후</strong></td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>비고</strong></td>
+                                        <td colspan="6" class="k_left">
+                                            <p>※ 휴진 : 매주 토요일 휴진, 8/8(월) ~ 8/13(토) 휴진</p>
+                                            <p>※ 동헌종 원장 진료는 예약제로 진행되며, 당일예약/접수가 어려운 점 알려드립니다.</p>
+                                            <p>※ 응급 수술 등에 의해 진료시간이 변경될 수 있으니 예약 및 내원 시 확인바랍니다.</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="k_btn_group">
+                                <input type="button" value="주요경력" class="button"/>
+                                <input type="button" value="온라인예약" class="button" style="background-color: #1f75b0; color: #eee;"/>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="k_main_body" id="c">
+                        <div class="k_main_img">
+                            <img src="./img/intro/page1/doctor01.jpg" alt="doctor">
+                        </div>
+                        <div class="k_info">
+                            <p class="k_name">
+                                <b>동헌종8</b>
+                                <span class="k_pos">원장</span>
+                                <span class="k_spec">이비인후과 전문의</span>
+                            </p>
+                            <p class="k_roll">
+                                <b class="k_tit">진료과</b>
+                                " 코 센터 "
+                            </p>
+                            <p class="k_roll" style="border-bottom: none;"">
+                                <b class="k_tit2">전문분야</b>
+                                " 축농증 내시경수술, 알레르기비염, 비중격곡증 "
+                            </p>
+                            <table class="k_info_table">
+                                <tbody>
+                                    <tr>
+                                        <th>시간</th>
+                                        <th>월</th>
+                                        <th>화</th>
+                                        <th>수</th>
+                                        <th>목</th>
+                                        <th>금</th>
+                                        <th>토</th>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>오전</strong></td>
+                                        <td>진료</td>
+                                        <td>진료</td>
+                                        <td>-</td>
+                                        <td>진료</td>
+                                        <td>진료</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>오후</strong></td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>비고</strong></td>
+                                        <td colspan="6" class="k_left">
+                                            <p>※ 휴진 : 매주 토요일 휴진, 8/8(월) ~ 8/13(토) 휴진</p>
+                                            <p>※ 동헌종 원장 진료는 예약제로 진행되며, 당일예약/접수가 어려운 점 알려드립니다.</p>
+                                            <p>※ 응급 수술 등에 의해 진료시간이 변경될 수 있으니 예약 및 내원 시 확인바랍니다.</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="k_btn_group">
+                                <input type="button" value="주요경력" class="button"/>
+                                <input type="button" value="온라인예약" class="button" style="background-color: #1f75b0; color: #eee;"/>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="k_main_body"  id="d">
+                        <div class="k_main_img">
+                            <img src="./img/intro/page1/doctor01.jpg" alt="doctor">
+                        </div>
+                        <div class="k_info">
+                            <p class="k_name">
+                                <b>동헌종9</b>
+                                <span class="k_pos">원장</span>
+                                <span class="k_spec">이비인후과 전문의</span>
+                            </p>
+                            <p class="k_roll">
+                                <b class="k_tit">진료과</b>
+                                " 코 센터 "
+                            </p>
+                            <p class="k_roll" style="border-bottom: none;"">
+                                <b class="k_tit2">전문분야</b>
+                                " 축농증 내시경수술, 알레르기비염, 비중격곡증 "
+                            </p>
+                            <table class="k_info_table">
+                                <tbody>
+                                    <tr>
+                                        <th>시간</th>
+                                        <th>월</th>
+                                        <th>화</th>
+                                        <th>수</th>
+                                        <th>목</th>
+                                        <th>금</th>
+                                        <th>토</th>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>오전</strong></td>
+                                        <td>진료</td>
+                                        <td>진료</td>
+                                        <td>-</td>
+                                        <td>진료</td>
+                                        <td>진료</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>오후</strong></td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>비고</strong></td>
+                                        <td colspan="6" class="k_left">
+                                            <p>※ 휴진 : 매주 토요일 휴진, 8/8(월) ~ 8/13(토) 휴진</p>
+                                            <p>※ 동헌종 원장 진료는 예약제로 진행되며, 당일예약/접수가 어려운 점 알려드립니다.</p>
+                                            <p>※ 응급 수술 등에 의해 진료시간이 변경될 수 있으니 예약 및 내원 시 확인바랍니다.</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="k_btn_group">
+                                <input type="button" value="주요경력" class="button"/>
+                                <input type="button" value="온라인예약" class="button" style="background-color: #1f75b0; color: #eee;"/>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="k_main_body"  id="d">
+                        <div class="k_main_img">
+                            <img src="./img/intro/page1/doctor01.jpg" alt="doctor">
+                        </div>
+                        <div class="k_info">
+                            <p class="k_name">
+                                <b>동헌종10</b>
+                                <span class="k_pos">원장</span>
+                                <span class="k_spec">이비인후과 전문의</span>
+                            </p>
+                            <p class="k_roll">
+                                <b class="k_tit">진료과</b>
+                                " 코 센터 "
+                            </p>
+                            <p class="k_roll" style="border-bottom: none;">
+                                <b class="k_tit2">전문분야</b>
+                                " 축농증 내시경수술, 알레르기비염, 비중격곡증 "
+                            </p>
+                            <table class="k_info_table">
+                                <tbody>
+                                    <tr>
+                                        <th>시간</th>
+                                        <th>월</th>
+                                        <th>화</th>
+                                        <th>수</th>
+                                        <th>목</th>
+                                        <th>금</th>
+                                        <th>토</th>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>오전</strong></td>
+                                        <td>진료</td>
+                                        <td>진료</td>
+                                        <td>-</td>
+                                        <td>진료</td>
+                                        <td>진료</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>오후</strong></td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>비고</strong></td>
+                                        <td colspan="6" class="k_left">
+                                            <p>※ 휴진 : 매주 토요일 휴진, 8/8(월) ~ 8/13(토) 휴진</p>
+                                            <p>※ 동헌종 원장 진료는 예약제로 진행되며, 당일예약/접수가 어려운 점 알려드립니다.</p>
+                                            <p>※ 응급 수술 등에 의해 진료시간이 변경될 수 있으니 예약 및 내원 시 확인바랍니다.</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="k_btn_group">
+                                <input type="button" value="주요경력" class="button"/>
+                                <input type="button" value="온라인예약" class="button" style="background-color: #1f75b0; color: #eee;"/>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section> -->
+        <section class="page" id="page2">
+            <div class="k_content_vs">
+                <figure class="k_sub_ban">
+                    <!-- <img src="./img/intro/page1/bg_sub_top1.jpg" alt="img"> -->
+                    <div class="k_tit_box">
+                        <h2 class="k_sub_tit">병원소개</h2>
+                        <p class="k_sub_com">해오름안과 홈페이지를 찾아주신 고객님들께 진심으로 감사를 드립니다.</p>
+                    </div>
+                </figure>
+                <div class="k_content_nav">
+                    <div class="k_bread_wrap">
+                        <ul class="k_bread">
+                            <li class="k_item1">
+                                <a href="index.html" class="home" >HOME</a>
+                            </li>
+                            <li class="k_item2">intro</li>
+                            <li class="k_item3">
+                                <select name="sel" id="sel2" class="sel">
+                                    <option value="intro.html#page1">page1</option>
+                                    <option value="intro.html#page2" selected>page2</option>
+                                    <option value="intro.html#page3">page3</option>
+                                    <option value="intro.html#page4">page4</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="k_content_main_wrap">
+                    <div class="k_content_main">
+                        <div class="k_p2_title">
+                            <h1>두눈의 의미</h1>
+                            <p>H A N A  E N T  H O S P I T A L</p>
+                        </div>
+                    </div>
+                    <div class="k_p2_content">
+                        <img src="./img/intro/page2/img_intro01_10.jpg" alt="img">
+                    </div>
+                    <div class="k_p2_content2">
+                        <ul>
+                            <li class="k_item1">
+                                <h1>해오름안과에서 찾은 "광명"</h1>
+                                <p>H A N A  E N T  H O S P I T A L</p>
+                                <div class="k_item1_s">
+                                <ul>
+                                    <li>
+                                        <img src="./img/intro/page2/doctor7.jpg" alt="img">
+                                        <h2>아베마리아가 울려 퍼지는 광명의 빛을 찾아서,</h2>
+                                        <p>국내 최초는 아니어도, 국내 유일의 고객을 위한 안과.</p>
+                                    </li>
+                                    <li>
+                                        <img src="./img/intro/page2/doctor2.jpg" alt="img">
+                                        <h2>보건복지부 의료기관 평가 인증획득</h2>
+                                        <p>누구나 한번 오면 두번 오게되는 곳</p>
+                                    </li>
+                                    <li>
+                                        <img src="./img/intro/page2/doctor3.jpg" alt="img">
+                                        <h2>눈 질환별
+                                            전문의료진</h2>
+                                        <p>눈 세부 질환별로 많은
+                                            치료경험과 수술경험을 갖춘 실력있는
+                                            의료진으로 구성되어 있습니다.</p>
+                                    </li>
+                                    <li>
+                                        <img src="./img/intro/page2/doctor4.jpg" alt="img">
+                                        <h2>환자 안전수술 시스템</h2>
+                                        <p>환자 안전을 우선으로 생각하는
+                                            해오름안과는 환자 안전을
+                                            위한 시설/장비를 갖추고,
+                                            마취과 전문의 상주로 수술
+                                            전과정을 모니터링합니다.</p>
+                                    </li>
+                                    <li>
+                                        <img src="./img/intro/page2/doctor5.jpg" alt="img">
+                                        <h2>풍부한 임상경험의
+                                            수술 전문병원</h2>
+                                        <p>외래260만, 수술6만건의 월등한
+                                            치료실적과 경험 많은 의료진,
+                                            첨단수술장비를 갖춘 수술 전문병원
+                                            입니다.</p>
+                                    </li>
+                                    <li>
+                                        <img src="./img/intro/page2/doctor6.jpg" alt="img">
+                                        <h2>환자 중심의 진료시스템</h2>
+                                        <p>환자분의 편의를 위해
+                                            진료, 검사, 검사결과 설명 및
+                                            수술결정까지 당일 1~2시간 내에 가능한
+                                            원스톱 시스템을 운영하고 있습니다.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="k_p2_content3">
+                        <h2>전국 46개의 하나</h2>
+                        <h2>그 중 “역삼동 하나이비인후과병원은 본원”입니다.</h2>
+                        <p>서울 강남(역삼)에 위치한 하나이비인후과병원 본원을 비롯하여</p>
+                        <p>명동, 광화문, 용산, 강서, 서대문, 잠실, 목동, 신도림, 디엠씨, 강동, 옥수, 성수, 노원,</p>
+                        <p>남양주, 파주, 동탄, 이천, 수지, 수원, 북수원, 김포, 의정부, 광주, 미사, 위례, 탄현, 남양, 파주,분당</p>
+                        <p>다산, 대전, 서산, 청주, 서청주, 충주, 홍성, 울산, 부산, 상주, 구미, 창원, 광주, 순천, 김제 등</p>
+                        <p><b>총 46개 병의원 이비인후과 네트워크를 구축하고</b> 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer id="ft"></footer>
+</div>  
+</body>
+<script>
+    $(document).ready(function(){
+        $(".sel").change(function(){
+            location.href = this.value;
+            $('.sel').val(this.value).prop("selected",true);
+        });
+    });
+</script>
+<script>
+$('#menu1').click(function(){
+// $('.k_main_body').css('display','block');
+$('.k_main_body').css('display','none');
+$('.k_main_body').eq(0).css('display','block');
+$('.k_main_body').eq(1).css('display','block');
+$('.k_main_body').eq(2).css('display','block');
+$('.k_main_body').eq(3).css('display','block');
+$('.k_main_body').eq(4).css('display','block');
+$('.k_main_body').eq(5).css('display','block');
+$('.k_main_body').eq(6).css('display','block');
+$('.k_main_body').eq(7).css('display','block');
+$('.k_main_body').eq(8).css('display','block');
+$('.k_main_body').eq(9).css('display','block');
+$('.k_main_body').eq(10).css('display','block');
+});
+$('#menu2').click(function(){
+// $('.k_main_body').css('display','block');
+$('.k_main_body').css('display','none');
+$('.k_main_body').eq(0).css('display','block');
+$('.k_main_body').eq(1).css('display','block');
+});
+$('#menu3').click(function(){
+// $('.k_main_body').css('display','block');
+$('.k_main_body').css('display','none');
+$('.k_main_body').eq(2).css('display','block');
+$('.k_main_body').eq(3).css('display','block');
+});
+$('#menu4').click(function(){
+// $('.k_main_body').css('display','block');
+$('.k_main_body').css('display','none');
+$('.k_main_body').eq(4).css('display','block');
+$('.k_main_body').eq(5).css('display','block');
+});
+$('#menu5').click(function(){
+// $('.k_main_body').css('display','block');
+$('.k_main_body').css('display','none');
+$('.k_main_body').eq(6).css('display','block');
+$('.k_main_body').eq(7).css('display','block');
+});
+$('#menu6').click(function(){
+// $('.k_main_body').css('display','block');
+$('.k_main_body').css('display','none');
+$('.k_main_body').eq(8).css('display','block');
+$('.k_main_body').eq(9).css('display','block');
+});
+$('#menu7').click(function(){
+// $('.k_main_body').css('display','block');
+$('.k_main_body').css('display','none');
+$('.k_main_body').eq(10).css('display','block');
+$('.k_main_body').eq(0).css('display','block');
+});
+$('#menu8').click(function(){
+// $('.k_main_body').css('display','block');
+$('.k_main_body').css('display','none');
+$('.k_main_body').eq(0).css('display','block');
+$('.k_main_body').eq(1).css('display','block');
+$('.k_main_body').eq(2).css('display','block');
+$('.k_main_body').eq(3).css('display','block');
+$('.k_main_body').eq(4).css('display','block');
+});
+
+</script>
+</html>

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -33,29 +32,22 @@
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
 <style>
     * { margin: 0; padding: 0;}
-
     table { border-collapse: collapse;}
-
     caption { display: none;}
-
     a { text-decoration: none; color: inherit;}
 
     .btit { text-align: center;}
-
-    .board_wrap { padding: 50px; }
-
+    .board_wrap { padding: 50px; padding: o;margin: auto; }
     .board_list { width: 100%; border-top: 2px solid #1f75b0;}
-
     .board_list tr { border-bottom: 1px solid #ccc;}
-
     .board_list th,
     .board_list td {  padding: 10px; font-size: 14px; }
-
     .board_list td { text-align: center; }
-
     .board_list .tit {  text-align: left; }
-
     .board_list .tit:hover {  text-decoration: underline; }
+    .btnf{clear: both; margin: 0; padding: auto; float: right; margin-bottom: 10px; padding: 20px; }
+    .btn a {padding: 10px; }
+    
 </style>
 <html>
     <title>게시판 목록</title>
@@ -63,6 +55,9 @@
     <body>
         <div class="board_wrap">
             <h2 class="btit">공지사항</h2><br><br>
+            <div class="btnf">
+                <button class="btn"><a href="boardWrite.html">글쓰기</a></button>
+            </div>
             <table class="board_list">
                 <caption>게시판 목록</caption>
                 <thead>
@@ -117,6 +112,7 @@
                 </tbody>
             </table>
         </div>
+     
         <script> 
             $(function(){
               $("#header").load("header.html"); 

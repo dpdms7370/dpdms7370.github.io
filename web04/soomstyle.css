@@ -67,7 +67,7 @@ ul ul {list-style-type: circle;margin-block-start: 0px;margin-block-end: 0px;}
 .bread li:after { content:">"; padding-left: 24px; }
 .bread li:last-child::after { content: ""; }
 
-.page { clear:both; min-height:100vh; display:none; padding-top: 100px; }
+.page { clear:both; min-height:100vh; display:none; }
 .page:target { display:block; }
 
 .tit_box { position:absolute; top:0px; left: 0px; z-index:30; padding-top: 150px; 

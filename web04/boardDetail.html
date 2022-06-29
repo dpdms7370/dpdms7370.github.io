@@ -1,4 +1,5 @@
 
+
  <!DOCTYPE html>
  <html lang="ko">
  <head>
@@ -33,8 +34,10 @@
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
  <style>	 
      .bd { text-align: center;}
+     
+
  </style>
-     <title>Document</title>
+     <title>글상세보기</title>
  </head>
   
   <body class="main_bg">
@@ -78,14 +81,14 @@
                     <input type="hidden" name="uid" value="">                           
                 <table width="100%" border="0" cellpadding="0" cellspacing="0" class="classBoard">                      
                         <tr height="40">
-                            <td align="center" colspan="6">※ 개인정보취급방침(아래 개인정보취급방침에 동의 하셔야 상담 이용이 가능합니다.)</td>
+                            <td align="center" colspan="6">"해오름 안과에서 광명을 찾으세요."</td>
                         </tr>
                         <tr>
                             <td colspan="6"><img height="1" width="100%" src="about:blank" style="background:#D6D6D6"></td>
                         </tr>                       
                         <tr height="40">
                             <td><strong><font color="#424242">이름</font></strong></td>
-                            <td colspan="3"><input type="text" name="usrname" value="" certainly="true" class="classBoard">강**</td>
+                            <td colspan="3"><input type="text" name="usrname" value="부원장" certainly="true" class="classBoard"></td>
                         </tr>
                         <tr>
                             <td colspan="6"><img height="1" width="100%" src="about:blank" style="background:#D6D6D6"></td>
@@ -110,18 +113,18 @@
                             <td colspan="6" bgcolor="#E7E7E7"></td>
                         </tr>
                         <tr height="40">
-                            <td><strong><font color="#424242">상담제목</font></strong></td>
-                            <td colspan="3"><input type="text" name="title" value="" maxlength="100" size="50" certainly="true" class="classBoard">
-                            라식수술 문의드립니다.
+                            <td><strong><font color="#424242">제목</font></strong></td>
+                            <td colspan="3"><input type="text" name="title" value="6월 해오름안과 진료 안내 및 소식" maxlength="100" size="50" certainly="true" class="classBoard">
+                            
                         </td>
                         </tr>                       
                         <tr>
                             <td colspan="6"><img height="1" width="100%" src="about:blank" style="background:#D6D6D6"></td>
                         </tr>                     
                         <tr>
-                            <td><strong><font color="#424242">상담내용</font></strong></td>
+                            <td><strong><font color="#424242">내용</font></strong></td>
                             <td colspan="3"><textarea name="contents" rows="10" cols="50" certainly="true" class="classBoard">
-                            제가 라식수술을 받고 싶은데, 수술이 가능한 눈인지 잘 모르겠어요. 그리고 수술 비용도 궁금합니다.
+                            해오름 안과는 6월에도 계속 진료합니다. 많이 와
                             </textarea></td>
                         </tr>                      
                         <tr>
@@ -130,8 +133,8 @@
                         <tr height="40">
                             <td><strong><font color="#424242">공개여부</font></strong></td>
                             <td colspan="3">
-                                <input type="radio" name="security" value="N" style="border:0; background:;"  class="classBoard"> 공개
-                                <input type="radio" name="security" value="Y" style="border:0; background:;" checked class="classBoard" > 비공개
+                                <input type="radio" name="security" value="N" style="border:0; background:;" checked class="classBoard"> 공개
+                                <input type="radio" name="security" value="Y" style="border:0; background:;"  class="classBoard" > 비공개
                             </td>
                         </tr>                      
                         <tr>
@@ -152,20 +155,12 @@
         </td>
         </tr>
     </table>  
-  </form>			
-   </div>
-                  
-  
-\                    
-              </div>
-              <!-- //sub_contents -->                    
-              <span class="clearfloat"></span>           
-                  
-          </div>
-          <!-- //colgroup -->    
-     
+  </form>
+  <footer id="footer" class="footer" name="footer"></footer>			
+</div>                   
+              </div>                                            
+          </div>          
       </div>
-      <!-- //container -->
       <hr />
       <script>
         $(function(){
@@ -173,8 +168,9 @@
             $("#footer").load("footer.html"); 
         });
     </script>
-    <footer id="footer" class="footer" name="footer"></footer>
+
 </body>
 </html>   
       
       
+>>>>>>> e18abc5e4787b299467b3135298abe9f7fedb0b5
