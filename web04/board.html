@@ -36,7 +36,7 @@
     caption { display: none;}
     a { text-decoration: none; color: inherit;}
 
-    .btit { text-align: center;}
+    .btit { text-align: center; margin-top: 70px;}
     .board_wrap { padding: 50px; padding: o;margin: auto; }
     .board_list { width: 100%; border-top: 2px solid #1f75b0;}
     .board_list tr { border-bottom: 1px solid #ccc;}
@@ -46,13 +46,14 @@
     .board_list .tit {  text-align: left; }
     .board_list .tit:hover {  text-decoration: underline; }
     .btnf{clear: both; margin: 0; padding: auto; float: right; margin-bottom: 10px; padding: 20px; }
-    .btn a {padding: 10px; }
+    .btn {background-color: rgb(163, 186, 230); padding: 5px 20px; margin-top: 20px; font-size: 15px; border: #ececec; border-radius: 3px;}
     
 </style>
 <html>
-    <title>게시판 목록</title>
+    <title>진료 안내</title>
     </head>
     <body>
+        <header id="header" name="header" class="header"></header>   
         <div class="board_wrap">
             <h2 class="btit">공지사항</h2><br><br>
             <div class="btnf">
@@ -104,7 +105,7 @@
                     <tr>
                         <td>1</td>
                         <td class="tit">
-                            <a href="boardDetail.html">"해오름안과 1월 진료 안내 및 소식"</a>
+                            <a href="boardDetail.html">해오름안과 1월 진료 안내 및 소식</a>
                         </td>
                         <td>관리자</td>
                         <td>2019-10-24</td>
@@ -112,7 +113,7 @@
                 </tbody>
             </table>
         </div>
-     
+        <footer id="footer" name="footer" class="footer"></footer> 
         <script> 
             $(function(){
               $("#header").load("header.html"); 

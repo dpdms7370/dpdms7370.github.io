@@ -32,130 +32,101 @@
       <!-- 웹 아이콘 연결 -->
       <!-- XEIcon -->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
- <style>	 
+ <style>
+ 	.main_bg{margin-top: 30px;} 
      .bd { text-align: center;}
-     
+     .sub_con_01{clear: both; width: 100%;}
+     .sub_con_02{clear: both; width: 100%;}
+     .tit{text-align: center; margin-top: 90px;}
+     .month{clear: both; text-align: center; text-decoration-style: wavy; border: 1px solid#000; margin-top: 50px; width: 500px; height: 300px; margin-left: auto; margin-right: auto;}
+     .month tr th, .month tr td{display: table-cell;border: 1px solid#000; }
+     .month tr th{text-shadow: blur #000;}
+     .month thead th:first-child{background-color: rgba(250, 112, 112, 0.185);}
+     .month thead th:last-child{background-color: rgba(243, 120, 120, 0.171);}
+     .month thead th{background-color: rgba(127, 255, 212, 0.137); }
+     .classBoard{padding: 10px 25px; background-color: rgb(163, 186, 230); border: #ececec; border-radius: 3px; }
+     .footer{margin-top: 30px;}
 
  </style>
      <title>글상세보기</title>
  </head>
   
-  <body class="main_bg">
+  <body class="content_wrap">
     <header id="header" class="header" name="header"></header> 
          <div id="wrap" class="main_bg">
             <div id="container" class="sub_container"> 
-                <div class="sub_img">
-                    <div class="colgroup"><img src="../images/sub_img09.jpg" alt="당신의 건강한눈을위해 해오름안과에서 최선을 다하겠습니다. " /></div>
-                </div>
-                <div class="sub_con_01">                  
-                    <br><br>
-                <script language="javascript" src="../js/Ajax.js"></script>
-                <script language="javascript">
-                function precheckF(Fobj) {
-                    var tmpwtable = "counsel_1";
-                    if (!Fobj.pensok.checked) { alert("개인정보취급방침에 동의하여 주십시오."); Fobj.pensok.focus(); return; }
-                    if (!Fobj.usrname.value) { alert("이름을 입력하세요"); Fobj.usrname.focus(); return; }
-                    if (tmpwtable=='counsel_1')
-                    {
-                        //if (!Fobj.age.value) { alert("생년을 입력하세요"); Fobj.age.focus(); return; }
-                        //if (!Fobj.army.value) { alert("병력, 신상정보를 입력하세요"); Fobj.army.focus(); return; }
-                    } else {
-                        if (!Fobj.phone.value) { alert("연락처를 입력하세요"); Fobj.phone.focus(); return; }
-                        if (!Fobj.oper.value) { alert("수술일을 입력하세요"); Fobj.oper.focus(); return; }
-                    }
-                    //if (!Fobj.email.value) { alert("이메일을 입력하세요"); Fobj.email.focus(); return; }
-                    //if (!is_Email(Fobj.email.value)) { alert("올바른 이메일이 아닙니다."); Fobj.email.focus(); return; }
-                    if (!Fobj.title.value) { alert("제목을 입력하세요"); Fobj.title.focus(); return; }
-                    if (!Fobj.contents.value) { alert("내용을 입력하세요"); Fobj.contents.focus(); return; }
-                    if (!Fobj.passwd.value) { alert("비밀번호을 입력하세요"); Fobj.passwd.focus(); return; }
-                
-                    checkF(Fobj,'다음 항목을 입력하세요');
-                }
-                </script>
-  
-                <form name="F" method="post" action="/09_ui/ui_01.html" enctype="multipart/form-data">
-                    <input type="hidden" name="act" value="6">
-                    <input type="hidden" name="page" value="3">
-                    <input type="hidden" name="methods" value="ins">
-                    <input type="hidden" name="seq" value="">
-                    <input type="hidden" name="uid" value="">                           
-                <table width="100%" border="0" cellpadding="0" cellspacing="0" class="classBoard">                      
-                        <tr height="40">
-                            <td align="center" colspan="6">"해오름 안과에서 광명을 찾으세요."</td>
-                        </tr>
-                        <tr>
-                            <td colspan="6"><img height="1" width="100%" src="about:blank" style="background:#D6D6D6"></td>
-                        </tr>                       
-                        <tr height="40">
-                            <td><strong><font color="#424242">이름</font></strong></td>
-                            <td colspan="3"><input type="text" name="usrname" value="부원장" certainly="true" class="classBoard"></td>
-                        </tr>
-                        <tr>
-                            <td colspan="6"><img height="1" width="100%" src="about:blank" style="background:#D6D6D6"></td>
-                        </tr>                      
-                        <tr height="40">
-                            <td width="15%"><strong><font color="#424242">성별</font></strong></td>
-                            <td width="35%">
-                                <input type="radio" name="sex" value="man" checked>남 
-                                <input type="radio" name="sex" value="woman" >여
-                            </td>                        
-                        <tr>
-                            <td colspan="6"><img height="1" width="100%" src="about:blank" style="background:#D6D6D6"></td>
-                        </tr>                        
-                        <tr>
-                            <td colspan="6"><img height="1" width="100%" src="about:blank" style="background:#D6D6D6"></td>
-                        </tr>                       
-                        <tr height="40">
-                            <td><strong><font color="#5DA31F">연락처</font></strong></td>
-                            <td><input type="text"> </td>                              
-                        </tr>                       
-                        <tr height="1">
-                            <td colspan="6" bgcolor="#E7E7E7"></td>
-                        </tr>
-                        <tr height="40">
-                            <td><strong><font color="#424242">제목</font></strong></td>
-                            <td colspan="3"><input type="text" name="title" value="6월 해오름안과 진료 안내 및 소식" maxlength="100" size="50" certainly="true" class="classBoard">
-                            
-                        </td>
-                        </tr>                       
-                        <tr>
-                            <td colspan="6"><img height="1" width="100%" src="about:blank" style="background:#D6D6D6"></td>
-                        </tr>                     
-                        <tr>
-                            <td><strong><font color="#424242">내용</font></strong></td>
-                            <td colspan="3"><textarea name="contents" rows="10" cols="50" certainly="true" class="classBoard">
-                            해오름 안과는 6월에도 계속 진료합니다. 많이 와
-                            </textarea></td>
-                        </tr>                      
-                        <tr>
-                            <td colspan="6"><img height="1" width="100%" src="about:blank" style="background:#D6D6D6"></td>
-                        </tr>                      
-                        <tr height="40">
-                            <td><strong><font color="#424242">공개여부</font></strong></td>
-                            <td colspan="3">
-                                <input type="radio" name="security" value="N" style="border:0; background:;" checked class="classBoard"> 공개
-                                <input type="radio" name="security" value="Y" style="border:0; background:;"  class="classBoard" > 비공개
-                            </td>
-                        </tr>                      
-                        <tr>
-                            <td colspan="6"><img height="1" width="100%" src="about:blank" style="background:#D6D6D6"></td>
-                        </tr>                     
-                        <tr height="40" valign="middle">
-                            <td><strong><font color="#424242">비밀번호</font></strong></td>
-                            <td colspan="3">
-                                <input type="password" name="passwd" value="" maxlength="12" certainly="true" class="classBoard">
-                            </td>
-                        </tr>    
-                </table>
+                <div class="sub_con_01">
+                    <div class="sub_con_02">
+                    <form>
+                        <div class="tit"><span><h2><strong>이 달의 진료 안내</strong></h2></span></div>                                         
+                    <table class="month">                         
+                        <thead>
+                            <th>일</th>
+                            <th>월</th>
+                            <th>화</th>
+                            <th>수</th>
+                            <th>목</th>
+                            <th>금</th>
+                            <th>토</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>휴무</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>휴무</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>휴무</td>
+                            </tr>
+                            <tr>
+                                <td>휴무</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>휴무</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>휴무</td>
+                            </tr>
+                            <tr>
+                                <td>휴무</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>    
             <br>    
-    <table width="100%" border="0" cellpadding="2" cellspacing="1">
-        <tr>
-        <td align="center">
-        <input type="button" value="확인" onclick="precheckF(this.form,'다음 항목을 입력하십시오')" class="classBoard">&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="취소" onclick="movePage()" class="classBoard">
-        </td>
-        </tr>
-    </table>  
-  </form>
+            <table width="100%" border="0" cellpadding="2" cellspacing="1">
+                <tr>
+                <td align="center">
+                <button type="button" value="목록으로 가기" class="classBoard"><a href="board.html">목록</a></button>
+                </td>
+                </tr>
+            </table>  
+            </form>
   <footer id="footer" class="footer" name="footer"></footer>			
 </div>                   
               </div>                                            
@@ -168,9 +139,5 @@
             $("#footer").load("footer.html"); 
         });
     </script>
-
 </body>
 </html>   
-      
-      
->>>>>>> e18abc5e4787b299467b3135298abe9f7fedb0b5
