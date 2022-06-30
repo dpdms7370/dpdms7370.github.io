@@ -235,7 +235,7 @@
 			ani1();
 		}, 3000);
 		function ani1(){
-			$(".img_box").not(":animated").animate({"margin-left":-wd+"px"}, 600, function(){
+			$(".img_box").not(":animated").animate({"margin-left":-wd+"px"}, 800, function(){
 				$(".img_box li").eq(0).appendTo($(".img_box"));
 				$(".img_box").css("margin-left","0px");
 			});
@@ -243,7 +243,7 @@
 		function ani2(){
 			$(".img_box").css("margin-left",-wd+"px");
 			$(".img_box li:last-child").prependTo($(".img_box"));
-			$(".img_box").not(":animated").animate({"margin-left":"0px"}, 600);
+			$(".img_box").not(":animated").animate({"margin-left":"0px"}, 800);
 		}
 		$(".btn_group .next_btn").click(function(){
 			clearInterval(intv);
