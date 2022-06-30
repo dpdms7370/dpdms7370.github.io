@@ -33,7 +33,6 @@
       <!-- XEIcon -->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
  <style>	 
-<<<<<<< HEAD
     .formtop{margin-top: 80px;}
     .classBoard{padding:5px 10px ; font-size: medium; margin: auto; text-align: center;
         background-color: rgba(250, 249, 218, 0.897); padding: 5px 20px; margin-top: 20px; font-size: 15px; border: #999797; border-radius: 10px; box-shadow: #D6D6D6; }
@@ -44,26 +43,16 @@
     .tit{text-align: center; margin: 90px; padding-bottom: 30px;}
     .footer{margin-top: 100px;}
 
-=======
-    .sub_container{clear: both; width: 100%;}
-    .sub_con_01{padding: 0;margin: auto;}
-    .classBoard{padding:5px 10px ; font-size: medium; }
->>>>>>> e43a7bb358036d27aa546975cee0e201e154a1ed
  </style>
  <html lang="en">
  <head>
     
      <title>글쓰기</title>
  </head> 
-<<<<<<< HEAD
 <body>
-=======
-<body class="main_bg">
->>>>>>> e43a7bb358036d27aa546975cee0e201e154a1ed
 <header id="header" class="header" name="header"></header> 
   <div id="wrap" class="main_bg">
       <div id="container" class="sub_container"> 
-<<<<<<< HEAD
         <div class="sub_con_01">
             <script language="javascript" src="../js/Ajax.js"></script>
             <script language="javascript">
@@ -89,53 +78,16 @@
             }
             </script>           
             <form name="F" method="post" action="/09_ui/ui_01.html" enctype="multipart/form-data"class="formtop">
-=======
-          <div class="sub_img">
-              <div class="colgroup"><img src="../images/sub_img09.jpg" alt="당신의 건강한눈을위해 해오름안과에서 최선을 다하겠습니다. " /></div>
-          </div>
-                <div class="sub_con_01">     
-                    <br><br>
-                <script language="javascript" src="../js/Ajax.js"></script>
-                <script language="javascript">
-                function precheckF(Fobj) {
-                    var tmpwtable = "counsel_1";
-                    if (!Fobj.pensok.checked) { alert("개인정보취급방침에 동의하여 주십시오."); Fobj.pensok.focus(); return; }
-                    if (!Fobj.usrname.value) { alert("이름을 입력하세요"); Fobj.usrname.focus(); return; }
-                    if (tmpwtable=='counsel_1')
-                    {
-                        //if (!Fobj.age.value) { alert("생년을 입력하세요"); Fobj.age.focus(); return; }
-                        //if (!Fobj.army.value) { alert("병력, 신상정보를 입력하세요"); Fobj.army.focus(); return; }
-                    } else {
-                        if (!Fobj.phone.value) { alert("연락처를 입력하세요"); Fobj.phone.focus(); return; }
-                        if (!Fobj.oper.value) { alert("수술일을 입력하세요"); Fobj.oper.focus(); return; }
-                    }
-                    //if (!Fobj.email.value) { alert("이메일을 입력하세요"); Fobj.email.focus(); return; }
-                    //if (!is_Email(Fobj.email.value)) { alert("올바른 이메일이 아닙니다."); Fobj.email.focus(); return; }
-                    if (!Fobj.title.value) { alert("제목을 입력하세요"); Fobj.title.focus(); return; }
-                    if (!Fobj.contents.value) { alert("내용을 입력하세요"); Fobj.contents.focus(); return; }
-                    if (!Fobj.passwd.value) { alert("비밀번호을 입력하세요"); Fobj.passwd.focus(); return; }
-                
-                    checkF(Fobj,'다음 항목을 입력하세요');
-                }
-                </script>           
-            <form name="F" method="post" action="/09_ui/ui_01.html" enctype="multipart/form-data">
->>>>>>> e43a7bb358036d27aa546975cee0e201e154a1ed
                 <input type="hidden" name="act" value="6">
                 <input type="hidden" name="page" value="3">
                 <input type="hidden" name="methods" value="ins">
                 <input type="hidden" name="seq" value="">
                 <input type="hidden" name="uid" value="">          
-<<<<<<< HEAD
             <table width="75%" border="0" cellpadding="0" cellspacing="0" class="classBoard">           
                 <tr height="40">
                     <td align="center" colspan="6"><h2><strong>이용 후기 쓰기</strong></h2></td>
                 </tr>
                 <tr height="40">                 
-=======
-            <table width="100%" border="0" cellpadding="0" cellspacing="0" class="classBoard">
-            
-                <tr height="40">
->>>>>>> e43a7bb358036d27aa546975cee0e201e154a1ed
                     <td align="center" colspan="6">※ 개인정보취급방침(아래 개인정보취급방침에 동의 하셔야 상담 이용이 가능합니다.)</td>
                 </tr>
                 <tr>
@@ -169,7 +121,6 @@
                 </tr>
                 
                 <tr>
-<<<<<<< HEAD
                     <td colspan="6"><img height="1" width="100%" src="about:blank" style="background:#D6D6D6"></td>
                 </tr>
                 
@@ -182,39 +133,6 @@
                 </tr>                            
                 <tr height="40">
                     <td><strong>연락처</font></strong></td>
-=======
-                <td colspan="6"><img height="1" width="100%" src="about:blank" style="background:#D6D6D6"></td>
-                </tr>
-                
-                <tr height="40">
-                <td><strong><font color="#424242">이름</font></strong></td>
-                <td colspan="3"><input type="text" name="usrname" value="" certainly="true" class="classBoard"></td>
-                </tr>
-                
-                
-                <tr>
-                <td colspan="6"><img height="1" width="100%" src="about:blank" style="background:#D6D6D6"></td>
-                </tr>
-                
-                <tr height="40">
-                <td width="15%"><strong><font color="#424242">성별</font></strong></td>
-                <td width="35%">
-                <input type="radio" name="sex" value="man" checked>남 
-                <input type="radio" name="sex" value="woman" >여
-                </td>
-
-                
-                <tr>
-                <td colspan="6"><img height="1" width="100%" src="about:blank" style="background:#D6D6D6"></td>
-                </tr>
-                
-                <tr>
-                <td colspan="6"><img height="1" width="100%" src="about:blank" style="background:#D6D6D6"></td>
-                </tr>
-                
-                <tr height="40">
-                    <td><strong><font color="#5DA31F">연락처</font></strong></td>
->>>>>>> e43a7bb358036d27aa546975cee0e201e154a1ed
                     <td>
                         <select name="phone1">
                             <option value="010" >010</option>
@@ -226,11 +144,7 @@
                         </select> - 
                         <input type="text" name="phone2" value="" class="board" certainly="true" onkeydown="onlyNum(this)" onkeyup="onlyNum(this)" onblur="onlyNum(this)" maxlength="4" size="4"> - 
                         <input type="text" name="phone3" value="" class="board" certainly="true" onkeydown="onlyNum(this)" onkeyup="onlyNum(this)" onblur="onlyNum(this)" maxlength="4" size="4">
-<<<<<<< HEAD
                     </td>
-=======
-                        </td>
->>>>>>> e43a7bb358036d27aa546975cee0e201e154a1ed
                 </tr>
                 
                 <tr height="1">
@@ -245,11 +159,7 @@
                 </tr> 
                 <tr>
                     <td><strong><font color="#424242">상담내용</font></strong></td>
-<<<<<<< HEAD
                     <td colspan="3"><textarea rows="10" cols="100" certainly="true" class="classBoard"></textarea></td>
-=======
-                    <td colspan="3"><textarea name="contents" rows="10" cols="50" certainly="true" class="classBoard"></textarea></td>
->>>>>>> e43a7bb358036d27aa546975cee0e201e154a1ed
                 </tr> 
                 <tr>
                     <td colspan="6"><img height="1" width="100%" src="about:blank" style="background:#D6D6D6"></td>
@@ -274,7 +184,6 @@
                 </td>
                 </tr>            
             </table>           
-<<<<<<< HEAD
             <table width="100%" border="0" cellpadding="2" cellspacing="1" >
                 <tr>
                     <td align="center">
@@ -285,16 +194,6 @@
             </table>           
         </form>
       </div> 			
-=======
-            <table width="100%" border="0" cellpadding="2" cellspacing="1">
-                <tr>
-                    <td align="center">
-                        <input type="button" value="확인" onclick="precheckF(this.form,'다음 항목을 입력하십시오')" class="classBoard">&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="취소" onclick="movePage()" class="classBoard">
-                    </td>
-                </tr>
-            </table>           
-        </form>			
->>>>>>> e43a7bb358036d27aa546975cee0e201e154a1ed
    </div>                    
 </div>                      
 <footer id="footer" class="footer" name="footer"></footer>
