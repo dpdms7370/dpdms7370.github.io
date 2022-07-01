@@ -32,6 +32,7 @@
       <!-- 웹 아이콘 연결 -->
       <!-- XEIcon -->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+      <link rel="shortcut icon" type="image/x-icon" href="https://ilsan.chamc.co.kr/asset/img/cha.ico">
  <style>	 
     .formtop{margin-top: 80px;}
     .classBoard{padding:5px 10px ; font-size: medium; margin: auto; text-align: center;
@@ -72,8 +73,7 @@
                 //if (!is_Email(Fobj.email.value)) { alert("올바른 이메일이 아닙니다."); Fobj.email.focus(); return; }
                 if (!Fobj.title.value) { alert("제목을 입력하세요"); Fobj.title.focus(); return; }
                 if (!Fobj.contents.value) { alert("내용을 입력하세요"); Fobj.contents.focus(); return; }
-                if (!Fobj.passwd.value) { alert("비밀번호을 입력하세요"); Fobj.passwd.focus(); return; }
-            
+                if (!Fobj.passwd.value) { alert("비밀번호을 입력하세요"); Fobj.passwd.focus(); return; }            
                 checkF(Fobj,'다음 항목을 입력하세요');
             }
             </script>           
@@ -165,23 +165,20 @@
                     <td colspan="6"><img height="1" width="100%" src="about:blank" style="background:#D6D6D6"></td>
                 </tr>
                 <tr height="40">
-                <td><strong><font color="#424242">공개여부</font></strong></td>
-                <td colspan="3">
-                    <input type="radio" name="security" value="N" style="border:0;" checked class="classBoard"> 공개
-                    <input type="radio" name="security" value="Y" style="border:0; " class="classBoard" > 비공개
-                </td>
-                </tr>
-                
-                
+                    <td><strong><font color="#424242">공개여부</font></strong></td>
+                    <td colspan="3">
+                        <input type="radio" name="security" value="N" style="border:0;" checked class="classBoard"> 공개
+                        <input type="radio" name="security" value="Y" style="border:0; " class="classBoard" > 비공개
+                    </td>
+                </tr>               
                 <tr>
-                <td colspan="6"><img height="1" width="100%" src="about:blank" style="background:#D6D6D6"></td>
-                </tr>
-                
+                    <td colspan="6"><img height="1" width="100%" src="about:blank" style="background:#D6D6D6"></td>
+                </tr>                
                 <tr height="40" valign="middle">
-                <td><strong><font color="#424242">비밀번호</font></strong></td>
-                <td colspan="3">
-                <input type="password" name="passwd" value="" maxlength="12" certainly="true" class="classBoard">
-                </td>
+                    <td><strong><font color="#424242">비밀번호</font></strong></td>
+                    <td colspan="3">
+                    <input type="password" name="passwd" value="" maxlength="12" certainly="true" class="classBoard">
+                    </td>
                 </tr>            
             </table>           
             <table width="100%" border="0" cellpadding="2" cellspacing="1" >
