@@ -1,8 +1,7 @@
 @charset "UTF-8";
 * { margin: 0; padding: 0;}
 
-ul { display: block; list-style-type: disc;
-margin-inline-start: 0px; margin-inline-end: 0px; padding-inline-start: 40px;}
+ul { display: block; }
 
 .section { max-width: 1120px; margin: 0 auto; padding: 80px 0; }
 
