@@ -36,17 +36,15 @@
     <title>해오름안과</title>
 </head>
 <body>
-    <div id="mwrap">
-	<header id="header" class="header" name="header"></header>			
+<div id="mwrap">
+	<header id="header" class="header"></header>			
 		<div id="content">
             <div class="content_wrap">
                 <section class="page" id="page1">
 					<div class="bread_box">
                         <div class="bread_wrap">
                             <ul class="bread">
-                                <li class="item1">
-                                    <a href="index.html" class="home">HOME</a>
-                                </li>
+                                <li class="item1"><a href="index.html" class="home">HOME</a></li>                                                                   
                                 <li class="item2">ICL*TORIC ICL</li>
                                 <li class="item3">
                                     <select name="sel" id="sel1" class="sel">
@@ -137,9 +135,7 @@
 					<div class="bread_box">
                         <div class="bread_wrap">
                             <ul class="bread">
-                                <li class="item1">
-                                    <a href="index.html" class="home">HOME</a>
-                                </li>
+                                <li class="item1"><a href="index.html" class="home">HOME</a></li>
                                 <li class="item2">ICL*TORIC ICL</li>
                                 <li class="item3">
                                     <select name="sel" id="sel1" class="sel">
@@ -221,27 +217,18 @@
 									</li>
 								</ul>
 							</section>
-							</div>
                         </div>
                     </div>
                 </section>
-						</div>
-           			</div>
-            <script>
-            $(document).ready(function(){
-                $(".sel").change(function(){
-                    location.href = this.value;
-                });
-            });    
-            </script>
+			</div>
         </div>
-		<footer id="footer" class="footer" name="footer"></footer>
-	</div>
-	<script>
-		$(function(){
-			$("#header").load("header.html"); 
-			$("#footer").load("footer.html"); 
-		});
-	</script>     
+	</div>	
+<script>
+$(function(){
+	$("#header").load("header.html"); 
+	$("#footer").load("footer.html"); 
+});
+</script>  
+<footer id="footer" class="footer" ></footer>   
 </body>
 </html>
