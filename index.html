@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<title>YeEun's portfolio</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"></script>
+	<script src="js/main.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-latest.js" type="text/javascript"></script> -->
+    <!-- 문서정보등록 -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16"  href="./favicons/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <!-- 검색(메타)엔진정보 -->
+    <meta name="url" content="https://www..co.kr">
+    <meta name="title" content="Ye Eun's Portfolio">
+    <meta name="description" content="../images2/bx_loader.gif">
+    <meta name="keyword" content="웹개발자,자바,백엔드">
+    <!-- 오픈 그래프 -->
+    <meta property="og:ulr" content="https://www.abko12.co.kr">
+    <meta property="og:title" content="자바,웹개발자,백엔드">
+    <meta property="og:description" content="">
+    <meta property="og:img" content="">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding:400" rel="stylesheet">    
+    <style>
+    @font-face {
+        font-family: 'PyeongChangPeace-Bold';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Bold.woff2') format('woff2');
+        font-weight: 700;
+        font-style: normal;
+    }
+    h3{color:aliceblue; text-align: center; padding-bottom: 1px;}
+    #gnb li div h1, #gnb li div h2{text-shadow: 4px 2px 2px gray;}
+    .my{font-size: medium; }
+
+    </style>
+</head>
+<body>
+	<header id="main_header">
+		<ul id="gnb" >
+			<li class="col-2">
+				<div>
+					<h1><a href="#aboutme">Kim Ye Eun</a></h1>
+					<h2>Creative Web Developer</h2>
+				</div>
+			</li>
+			<li class="col-2">
+				<a href="#contact">
+					<span>Connect me</span>
+					<i class="far fa-envelope"></i>
+				</a>
+			</li>
+			<li class="col-2">
+				<a href="#aboutme">
+					<span>About Me</span>
+					<i class="far fa-user"></i>
+				</a>
+			</li>
+			<li class="col-2">
+				<a href="#portfolio">
+					<span>Portfolio</span>
+					<i class="fas fa-desktop"></i>
+				</a>
+			</li>				
+		</ul>
+	</header>
+	<section id="about">
+		<div class="container" id="aboutme">
+			<h1>About Me</h1>
+			<article>
+				<div class="col-3">
+					<img src="./img/shaking-hands-gbb97e24a0_640.jpg" alt="협업" width="100%">
+				</div>
+				<div class="col-3-2">
+					<p> 저는 사회복지학을 전공으로 더조은 컴퓨터아트 학원에서 [과정평가형 정보처리산업기사] 응용SW개발전문가과정을 통해 웹 기반의 다양한 기술을 공부하였습니다. 두가지의 학문이 융합된 인재로서 기술로 사람과 사람을 이어가는 인재임을 증명해내 보이겠습니다. 
+					</p>
+				</div>             
+			</article>
+            <section>
+                <form class="my">
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <td>Kim Ye Eun</td>    
+                        </tr>
+                        <tr>
+                            <th>Age</th>
+                            <td>30</td>    
+                        </tr>
+                        <tr>
+                            <th>Phone</th>
+                            <td>010-0000-0000</td>    
+                        </tr>
+                        <tr>
+                            <th>E-mail</th>
+                            <td>rlacldid7370@hanmail.net</td>    
+                        </tr>
+                        <tr>
+                            <th>Education</th>
+                            <td>저동고등학교|2008.3~2010.2<br>숭실대학교-사회복지학(학점: 4.31점)|2019.03~2022.02</td>
+                        </tr>
+                        <tr>
+                            <th>Hobby</th>
+                            <td>음악감상<br>책읽고 토론하기</td>
+                        </tr>
+                        <tr>
+                            <th>Past</th>
+                            <td>저는 주로 외식서비스와 사회복지에서 많은 실전 경험을 쌓았고, 다양한 사람들을 대하며 내공을 다져왔습니다. </td>
+                        </tr>
+                        <tr>
+                            <th>Now</th>
+                            <td>현재는 더조은 컴퓨터아트 학원에서 [과정평가형 정보처리산업기사] 응용SW개발전문가과정을 수강하며, 백엔드 개발자로서 필요한 기술들을 익히며 사용하고 있습니다.</td>    
+                        </tr>
+                        <tr>                    
+                            <th>Vision</th>
+                            <td><textarea cols="155" rows="10" >"더 많은 사람들에게, 더 많은 도움을 주자"
+                                저는 오랜 외식서비스 영역에서 다양한 사람들을 경험하며, 다양한 삶의 볼 수 있는 프리즘을 갖게 되었고, 
+                                20살의 성인이 되자마자 시작했던 자원봉사를 통하여 누군가를 도와 함께 살아간다는 것의 가치를 깊이 알게 되었습니다.
+                                그리하여 외식서비스 분야에서도 오랜기간 경력을 쌓았고, 일을 하는 것 또한 즐거웠지만 '함께 살아가는 세상'이라는 가치를 좀더 추구하고 전문성을 구현하기 위하여 '사회복지학'을 공부하게 되었습니다.
+
+                                '사회복지학'을 공부하며 전보다 더 많은 사람들의 삶의 군형과 고단함, 그리고 제도적 한계를 느끼며 '함께 살아가는 세상'이라는 가치를 어떻게 구현하면 좋을지 더욱 고민하며 생각하게 된 것은, 그것을 단순히 '사회복지사'라는 직업에 한정짓는 것이 아니라, 
+                                제 자신의 물리적 한계를 뛰어넘을 수 있는 기술의 힘과 이념을 녹아내어 기술로 구현할 수 있는 개발자의 길로 접목시켜 나아가면 좋겠다는 것이었습니다.
+                                그 계기를 통하여 시작하게된 '더조은 컴퓨터아트 학원에서 [과정평가형 정보처리산업기사] 응용SW개발전문가과정'을 수강함으로 말과 생각뿐만이 아닌, 추진력과 실행력 및 탄탄한 실력을 겸비한 사람이자 개발자가 되도록 꾸준히 노력할 것 있습니다.
+                            </textarea></td>
+                        </tr>
+                    </table>
+                </form>
+            </section>
+			<ul class="skill_graph clear">
+				<li class="col-4">
+					<div class="chart1" data-percent="85"><span></span></div>
+					<span>Java</span>
+				</li>
+                <li class="col-4">
+					<div class="chart2" data-percent="85"><span></span></div>
+					<span>Spring Legacy</span>
+				</li>
+                <li class="col-4">
+					<div class="chart3" data-percent="70"><span></span></div>
+					<span>Linux</span>
+				</li>
+				<li class="col-4">
+					<div class="chart4" data-percent="70"><span></span></div>
+					<span>Dev C++</span>
+				</li>
+			</ul>
+            <ul class="skill_graph clear">
+				<li class="col-4">
+					<div class="chart4" data-percent="85"><span></span></div>
+					<span>HTML</span>
+				</li>
+                <li class="col-4">
+					<div class="chart3" data-percent="85"><span></span></div>
+					<span>CSS</span>
+				</li>
+                <li class="col-4">
+					<div class="chart2" data-percent="70"><span></span></div>
+					<span>Javascript</span>
+				</li>
+				<li class="col-4">
+					<div class="chart1" data-percent="70"><span></span></div>
+					<span>J-Query</span>
+				</li>
+			</ul>
+		</div>
+	</section>	
+	<section id="portfolio">
+		<div class="container" id="portfolio">
+			<h1>My Portfolio</h1>
+			<p>6개월간의 피땀눈물의 결과</p>
+			<nav class="portfolio_nav">
+                <h3>Backend-portfolio</h3>
+				<a href="http://localhost:8090/web01/">ABKO Homepage</a>
+				<a href="http://localhost:8090/web03">DongGuBat Homepage-MVC2</a>
+				<a href="http://localhost:8083/web05/">One Moer Bag-Spring Legacy</a>
+			</nav>
+			<ul id="list" class="clear" clear:both;>
+				<li class="col-3"><a href="https://dpdms7370.github.io/web1/">
+					<img src="./img/bweb01.png" alt="앱코-회사홈페이지">
+				</a></li>
+				<li class="col-3"><a href="https://dpdms7370.github.io/web3/">
+					<img src="./img/bbweb03.png" alt="동구밭-쇼핑몰홈페이지">
+				</a></li>
+				<li class="col-3"><a href="http://localhost:8083/web05/">
+					<img src="./img/bweb05.png" alt="원모어백-쇼핑몰홈페이지">
+				</a></li>
+			</ul><br><br><br><br><br><br><br>
+            <span>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            </span><br><br><br><br><br><br><br>
+            <nav class="portfolio_nav">
+                <h3>Frontend-portfolio</h3>
+				<a href="https://dpdms7370.github.io/web1/">ABKO</a>
+				<a href="https://dpdms7370.github.io/web3/">JeJuTour</a>
+				<a href="https://dpdms7370.github.io/web04/">RisingEyes</a>
+			</nav>
+			<ul id="list" class="clear">
+				<li class="col-3"><a href="https://dpdms7370.github.io/web1/">
+					<img src="./img/fweb01.png" alt="앱코-회사홈페이지">
+				</a></li>
+				<li class="col-3"><a href="https://dpdms7370.github.io/web3/">
+					<img src="./img/fweb03.png" alt="제주도관광홈페이지">
+				</a></li>
+				<li class="col-3"><a href="https://dpdms7370.github.io/web04/">
+					<img src="./img/fweb04.png" alt="해오름안과-병원홈페이지">
+				</a></li>
+			</ul>
+            
+		</div>
+	</section>
+	
+	<section id="contact" class="container">
+		<h1>connect me</h1>
+		<div class="col-2">
+			<figure>
+				<img src="./img/earth.jpg" alt="photo"><br>
+				<figcation>Kim Ye Eun</figcation>	
+			</figure>
+		</div>
+		<div class="col-2">
+			<ul class="address">
+				<li><a href="mailto:#">CONTACT@HELLO.ME</a></li>
+				<li><a href="tel:#">010-1234-1234</a></li>
+			</ul>	
+			<ul class="sns">
+				<li><a href="#"><i class="xi-youtube-play"></i>Youtube</a></li>
+				<li><a href="#"><i class="xi-linux"></i>Instargram</a></li>
+				<li><a href="#"><i class="xi-reddit"></i>Email</a></li>
+			</ul>
+		</div>
+	</section>
+	<footer id="main_footer">
+		<div class="container">
+			<p>&copy; Copyright 2022 Kim Ye Eun.</p>
+		</div>
+	</footer>	
+</body>
+</html>
