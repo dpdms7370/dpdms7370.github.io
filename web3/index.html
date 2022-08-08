@@ -95,7 +95,7 @@ line-height: 38px; padding-top: 10px; padding-bottom: 40px; }
     .vs_com { clear: both; font-size:50px; padding-top: 40px;  }
     .vs_com2{font-size: 30px;}    
 
-    .btn_group {position:absolute; bottom:0px; left:90px; z-index:40; }
+    .btn_group {position: absolute; bottom:0px; left:90px; z-index:999; }
     .btn_group button { display:block; width: 80px; height: 80px; float:left; 
     background-color: rgba(92, 85, 27, 0.815); border:none; outline: none; color:#fff; }
     .btn_group button i[class*='xi'] { color: #fff; }
@@ -103,9 +103,10 @@ line-height: 38px; padding-top: 10px; padding-bottom: 40px; }
 
  .m {width: 100%;} 
  .thema li img { width: 300px; position: relative;}
- .thema, .t1{float: left; margin-top: auto; font-size: 25px; padding:15px; margin-left: 10px;}
- .tit{clear: both; padding-left: 800px; font-size: 70px; color: rgb(56, 45, 44); }
+ .thema, .t1{float: left; margin-top:auto ; margin-left:20em; font-size: 25px; padding:15px; margin-left: 10px;}
+ .tit{clear: both; padding: auto 800px; font-size: 40px; color: rgb(56, 45, 44); }
  #dal {margin-left: 40px;}
+ .t2 {text-decoration: underline;}
 
 </style>
     <style>
@@ -164,11 +165,8 @@ line-height: 38px; padding-top: 10px; padding-bottom: 40px; }
 
                     </ul>
                 </nav>
-                <p id="tnb"><a href="login.jsp">로그인</a><a href="">영어</a><a href="">검색</a></p>
-
-                
+                <p id="tnb"><a href="login.html">로그인</a><a href="">영어</a><a href="">검색</a></p>              
             </div>
-
         </header>
         <div id="content">  
             <figure id="vs">
@@ -178,8 +176,7 @@ line-height: 38px; padding-top: 10px; padding-bottom: 40px; }
                             <img src="./img/s1.jpg" alt="">
                             <div class="tit_box">
                                 <p class="vs_com">어서오세요, 제주의 봄 입니다.</p>
-                                <p class="vs_com2">2022년 놓치지 말아야 할 제주관광 10선</p>
-                                
+                                <p class="vs_com2">2022년 놓치지 말아야 할 제주관광 10선</p> 
                             </div>
                         </a>
                     </li>
@@ -188,8 +185,7 @@ line-height: 38px; padding-top: 10px; padding-bottom: 40px; }
                             <img src="./img/s2.jpg" alt="">
                             <div class="tit_box">
                                 <p class="vs_com">조천읍-봄편</p>
-                                <p class="vs_com2">제주마을산책4.3길을 걷다</p>
-                                
+                                <p class="vs_com2">제주마을산책4.3길을 걷다</p>   
                             </div>
                         </a>
                     </li>
@@ -198,16 +194,15 @@ line-height: 38px; padding-top: 10px; padding-bottom: 40px; }
                             <img src="./img/s3.jpg" alt="">
                             <div class="tit_box">
                                 <p class="vs_com">추자도 올레코스.</p>
-                                <p class="vs_com2">2022년 봄시즌 비대면 안심관광지</p>
-                                
+                                <p class="vs_com2">2022년 봄시즌 비대면 안심관광지</p>                               
                             </div>
                         </a>
-                    </li>                  
+                    </li>
+                    <div class="btn_group">
+                        <button class="prev_btn"><i class="xi-angle-left"></i></button>
+                        <button class="next_btn"><i class="xi-angle-right"></i></button>
+                    </div>                  
                 </ul_img_box>
-                <div class="btn_group">
-                    <button class="prev_btn"><i class="xi-angle-left"></i></button>
-                    <button class="next_btn"><i class="xi-angle-right"></i></button>
-                </div>
                     <script>
                         $(document).ready(function(){
                             wd = $(window).width();
@@ -251,15 +246,22 @@ line-height: 38px; padding-top: 10px; padding-bottom: 40px; }
                     <li class="t1"><img src="./img/theme02_0425.jpg" alt=""><p>가파도에 놀러가요</p></img></li>
                     <li class="t1"><img src="./img/theme03_0425.jpg" alt=""><p>아이들과 함께즐기는 체험</p></img></li>
                     <li class="t1"><img src="./img/theme04.jpg" alt=""><p>제주도 필드 체험</p></img></li>
+                    <li class="t1"><img src="./img/theme04.jpg" alt=""><p>제주도 필드 체험</p></img></li>                 
                   </ul>
               </li>
               <li>
                   <ul class="event">
-                      <li class="t2">이벤트1</li>
-                      <li class="t2">이벤트2</li>
-                      <li class="t2">이벤트3</li>
-                      <li class="t2">이벤트4</li>
-                      <li class="t2">이벤트5</li>
+                        <h2>제주관광 이벤트 소식</h2>
+                        <br>
+                      <li class="t2"><a href="">1.제주관광공사 10주년 이벤트(8/12~9/20)</a></li>
+                      <br>
+                      <li class="t2"><a href="">2.돌하르방의 가족들을 찾아서~(8/12~9/20)</a></li>
+                      <br>
+                      <li class="t2"><a href="">3.제주도의 역사탐방 이벤트(8/12~9/20)</a></li>
+                      <br>
+                      <li class="t2"><a href="">4.이벤트4</a></li>
+                      <br>
+                      <li class="t2"><a href="">5.이벤트5</a></li>
                   </ul>
               </li>
           </ul>
