@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform 03 - 2D Transform Rotation example</title>
+    <script src="prefixfree.min.js"></script>
+    <style>
+    * { margin: 0; padding: 0; }
+    body, html { width: 100%; min-height: 100%; }
+    ul { list-style: none; }
+    a { text-decoration: none; }
+    button, input { outline:0; border:0; background: none; }
+    .wrap { clear:both; width: 100%; min-height: 100vh; }
+    .tit { text-align: center; line-height: 1.6; padding-top: 1em; padding-bottom: 1em; }
+    .wrap:after, .box:after { content:""; display:block; clear: both ;}
+    .box { width: 200px; height: 200px; position:relative; margin: 400px auto;
+    
+     transform-style:preserve-3d; animation:ani1 2s ease-in 0s infinite; perspective: 900px; }
+    .box li { width: 200px; height: 200px; position:absolute; top: 0; left: 0; 
+    outline:1px solid #fff; background-color: #fff; opacity:0.6; }
+    .box li a { display: block; width: 200px; height: 200px; overflow:hidden; }
+    .box li a img { display:block; width: 200px; height:auto; }
+    .box li.item1 { transform:rotateY(30deg) translateZ(200px); }
+    .box li.item2 { transform:rotateY(40deg) translateZ(200px); }
+    .box li.item3 { transform:rotateY(50deg) translateZ(200px); }
+    .box li.item4 { transform:rotateY(60deg) translateZ(300px); }
+    .box li.item5 { transform:rotateX(70deg) translateZ(300px); }
+    .box li.item6 { transform:rotateX(80deg) translateZ(400px); }
+    .box li.item7 { transform:rotateX(90deg) translateZ(500px); }
+    .box li.item8 { transform:rotateX(100deg) translateZ(600px); }
+    .box li.item9 { transform:rotateX(110deg) translateZ(700px); }
+    .box li.item10 { transform:rotateX(120deg) translateZ(800px); }
+    .box li.item11 { transform:rotateX(130deg) translateZ(900px); }
+    .box li.item12 { transform:rotateX(140deg) translateZ(100px); }
+
+    @keyframes ani1 {
+        0% { transform:rotateX(0deg) rotateY(00deg) rotateZ(00deg); }
+        100% { transform:rotateX(360deg) rotateY(360deg) rotateZ(360deg); }
+    }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <ul class="box">
+            <li class="item1"><a href=""><img src="./image/ive/anyujin.jpg" alt="유진"></a></li>
+            <li class="item2"><a href=""><img src="./image/ive/gaeul.jpg" alt="가을"></a></li>
+            <li class="item3"><a href=""><img src="./image/ive/jangwonyoung.jpg" alt="원영"></a></li>
+            <li class="item4"><a href=""><img src="./image/ive/leeseo.jpg" alt="이서"></a></li>
+            <li class="item5"><a href=""><img src="./image/exo/baekhyun.jpg" alt="리즈"></a></li>
+            <li class="item6"><a href=""><img src="./image/exo/chanyeol.jpg" alt="레이"></a></li>
+            <li class="item7"><a href=""><img src="./image/exo/chen.jpg" alt="레이"></a></li>
+            <li class="item8"><a href=""><img src="./image/exo/chen.jpg" alt="레이"></a></li>
+            <li class="item9"><a href=""><img src="./image/exo/do.jpg" alt="레이"></a></li>
+            <li class="item10"><a href=""><img src="./image/exo/kai.jpg" alt="레이"></a></li>
+            <li class="item11"><a href=""><img src="./image/exo/lay.jpg" alt="레이"></a></li>
+            <li class="item12"><a href=""><img src="./image/exo/suho.jpg" alt="레이"></a></li>
+        </ul>
+    </div>
+</body>
+</html>

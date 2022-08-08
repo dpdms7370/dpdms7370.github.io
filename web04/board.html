@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 메타 데이터 -->
+    <meta name="url" content="https://www.risingeyes.com/index.html">
+    <meta name="description" content="고양시 주엽역 위치, 백내장, 노안, 안심렌즈, 시력검사, 안과">
+    <meta name="keywords" content="고양시 주엽역 위치, 백내장, 노안, 안심렌즈, 시력검사, 안과">
+    <!-- 오픈 그래프 -->
+    <meta property="og:url" content="https://www.risingeyes.com/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="해오름안과">
+    <meta property="og:description" content="고양시 주엽역 위치, 백내장, 노안, 안심렌즈, 시력검사, 안과">
+    <meta property="og:site_name" content="해오름안과">
+    <!-- jquery 임포트 -->
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+	<!-- 메인 화면의 스타일들을 넣어놓은 common.css를 불러옵니다. -->
+	<link rel="stylesheet" href="common.css">
+     <!-- 기본 플러그인 연결 -->
+     <script src="https://code.jquery.com/jquery-latest.js"></script>
+     <!-- 웹 폰트/폰트 모듈 연결 -->
+     <!-- font-family: 'Noto Sans KR', sans-serif; -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&display=swap" rel="stylesheet">
+     <!-- 웹 아이콘 연결 -->
+     <!-- XEIcon -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+     <link rel="shortcut icon" type="image/x-icon" href="https://ilsan.chamc.co.kr/asset/img/cha.ico">
+<style>
+    * { margin: 0; padding: 0;}
+    table { border-collapse: collapse;}
+    caption { display: none;}
+    a { text-decoration: none; color: inherit;}
+
+    .btit { text-align: center; margin-top: 70px;}
+    .board_wrap { padding: 50px; padding: o;margin: auto; }
+    .board_list { width: 100%; border-top: 2px solid #1f75b0;}
+    .board_list tr { border-bottom: 1px solid #ccc;}
+    .board_list th,
+    .board_list td {  padding: 10px; font-size: 14px; }
+    .board_list td { text-align: center; }
+    .board_list .tit {  text-align: left; }
+    .board_list .tit:hover {  text-decoration: underline; }
+    .btnf{clear: both; margin: 0; padding: auto; float: right; margin-bottom: 10px; padding: 20px; }
+    .btn {background-color: rgb(163, 186, 230); padding: 5px 20px; margin-top: 20px; font-size: 15px; border: #ececec; border-radius: 3px;}   
+</style>
+<html>
+    <title>진료 안내</title>
+    </head>
+    <body>
+        <header id="header" class="header"></header>   
+        <div class="board_wrap">
+            <h2 class="btit">공지사항</h2><br><br>
+            <div class="btnf">
+                <button class="btn"><a href="boardWrite.html">글쓰기</a></button>
+            </div>
+            <table class="board_list">
+                <caption>게시판 목록</caption>
+                <thead>
+                    <tr>
+                        <th>번호</th>
+                        <th>제목</th>
+                        <th>작성자</th>
+                        <th>작성일</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>5</td>
+                        <td class="tit">
+                            <a href="boardDetail.html">해오름안과 5월 진료 안내 및 소식</a>
+                        </td>
+                        <td>관리자</td>
+                        <td>2019-11-20</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td class="tit">
+                            <a href="boardDetail.html">해오름안과 4월 진료 안내 및 소식</a>
+                        </td>
+                        <td>관리자</td>
+                        <td>2019-11-12</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="tit">
+                            <a href="boardDetail.html">해오름안과 3월 진료 안내 및 소식</a>
+                        </td>
+                        <td>관리자</td>
+                        <td>2019-11-02</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="tit">
+                            <a href="boardDetail.html">해오름안과 2월 진료 안내 및 소식</a>
+                        </td>
+                        <td>관리자</td>
+                        <td>2019-10-28</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="tit">
+                            <a href="boardDetail.html">해오름안과 1월 진료 안내 및 소식</a>
+                        </td>
+                        <td>관리자</td>
+                        <td>2019-10-24</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <footer id="footer" class="footer"></footer> 
+        <script> 
+            $(function(){
+              $("#header").load("header.html"); 
+              $("#footer").load("footer.html"); 
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,204 @@
+
+
+ <!DOCTYPE html>
+ <html lang="ko">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- 메타 데이터 -->
+     <meta name="url" content="https://www.risingeyes.com/index.html">
+     <meta name="description" content="고양시 주엽역 위치, 백내장, 노안, 안심렌즈, 시력검사, 안과">
+     <meta name="keywords" content="고양시 주엽역 위치, 백내장, 노안, 안심렌즈, 시력검사, 안과">
+     <!-- 오픈 그래프 -->
+     <meta property="og:url" content="https://www.risingeyes.com/index.html">
+     <meta property="og:type" content="website">
+     <meta property="og:title" content="해오름안과">
+     <meta property="og:description" content="고양시 주엽역 위치, 백내장, 노안, 안심렌즈, 시력검사, 안과">
+     <meta property="og:site_name" content="해오름안과">
+     <!-- jquery 임포트 -->
+     <script src="https://code.jquery.com/jquery-latest.js"></script>
+     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+ 
+     <!-- 메인 화면의 스타일들을 넣어놓은 common.css를 불러옵니다. -->
+     <link rel="stylesheet" href="common.css">
+      <!-- 기본 플러그인 연결 -->
+      <script src="https://code.jquery.com/jquery-latest.js"></script>
+      <!-- 웹 폰트/폰트 모듈 연결 -->
+      <!-- font-family: 'Noto Sans KR', sans-serif; -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&display=swap" rel="stylesheet">
+      <!-- 웹 아이콘 연결 -->
+      <!-- XEIcon -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+      <link rel="shortcut icon" type="image/x-icon" href="https://ilsan.chamc.co.kr/asset/img/cha.ico">
+ <style>	 
+    .formtop{margin-top: 80px;}
+    .classBoard{padding:5px 10px ; font-size: medium; margin: auto; text-align: center;
+        background-color: rgba(250, 249, 218, 0.897); padding: 5px 20px; margin-top: 20px; font-size: 15px; border: #999797; border-radius: 10px; box-shadow: #D6D6D6; }
+    .classBoard tr td input , .classBoard tr td textarea {background-color:rgb(255, 255, 255); border: #ececec; margin-bottom: 20px; text-align: start;}
+    .classBoard tr td:nth-child(1) {padding-right: 35px;}
+    .classBoard tr td:nth-child(2) {float: left;}
+    .classbtn{background-color: rgb(163, 186, 230); padding: 5px 20px; margin-top: 20px; font-size: 15px; border: #ececec; border-radius: 3px;}
+    .tit{text-align: center; margin: 90px; padding-bottom: 30px;}
+    .footer{margin-top: 100px;}
+
+ </style>
+ <html lang="en">
+ <head>
+    
+     <title>글쓰기</title>
+ </head> 
+<body>
+<header id="header" class="header" name="header"></header> 
+  <div id="wrap" class="main_bg">
+      <div id="container" class="sub_container"> 
+        <div class="sub_con_01">
+            <script language="javascript" src="../js/Ajax.js"></script>
+            <script language="javascript">
+            function precheckF(Fobj) {
+                var tmpwtable = "counsel_1";
+                if (!Fobj.pensok.checked) { alert("개인정보취급방침에 동의하여 주십시오."); Fobj.pensok.focus(); return; }
+                if (!Fobj.usrname.value) { alert("이름을 입력하세요"); Fobj.usrname.focus(); return; }
+                if (tmpwtable=='counsel_1')
+                {
+                    //if (!Fobj.age.value) { alert("생년을 입력하세요"); Fobj.age.focus(); return; }
+                    //if (!Fobj.army.value) { alert("병력, 신상정보를 입력하세요"); Fobj.army.focus(); return; }
+                } else {
+                    if (!Fobj.phone.value) { alert("연락처를 입력하세요"); Fobj.phone.focus(); return; }
+                    if (!Fobj.oper.value) { alert("수술일을 입력하세요"); Fobj.oper.focus(); return; }
+                }
+                //if (!Fobj.email.value) { alert("이메일을 입력하세요"); Fobj.email.focus(); return; }
+                //if (!is_Email(Fobj.email.value)) { alert("올바른 이메일이 아닙니다."); Fobj.email.focus(); return; }
+                if (!Fobj.title.value) { alert("제목을 입력하세요"); Fobj.title.focus(); return; }
+                if (!Fobj.contents.value) { alert("내용을 입력하세요"); Fobj.contents.focus(); return; }
+                if (!Fobj.passwd.value) { alert("비밀번호을 입력하세요"); Fobj.passwd.focus(); return; }            
+                checkF(Fobj,'다음 항목을 입력하세요');
+            }
+            </script>           
+            <form name="F" method="post" action="/09_ui/ui_01.html" enctype="multipart/form-data"class="formtop">
+                <input type="hidden" name="act" value="6">
+                <input type="hidden" name="page" value="3">
+                <input type="hidden" name="methods" value="ins">
+                <input type="hidden" name="seq" value="">
+                <input type="hidden" name="uid" value="">          
+            <table width="75%" border="0" cellpadding="0" cellspacing="0" class="classBoard">           
+                <tr height="40">
+                    <td align="center" colspan="6"><h2><strong>이용 후기 쓰기</strong></h2></td>
+                </tr>
+                <tr height="40">                 
+                    <td align="center" colspan="6">※ 개인정보취급방침(아래 개인정보취급방침에 동의 하셔야 상담 이용이 가능합니다.)</td>
+                </tr>
+                <tr>
+                    <td align="center" colspan="6"><textarea name="textfield" cols="90" rows="5" class="box" readonly> '해오름안과'는 (이하 '안과'는) 고객님의 개인정보를 중요시하며, "정보통신망 이용촉진 및 정보보호"에 관한 법률을 준수하고 있습니다.
+                안과는 개인정보취급방침을 통하여 고객님께서 제공하시는 개인정보가 어떠한 용도와 방식으로 이용되고 있으며, 개인정보보호를 위해 어떠한 조치가 취해지고 있는지 알려드립니다.
+                
+                안과는 개인정보취급방침을 개정하는 경우 웹사이트 공지사항(또는 개별공지)을 통하여 공지할 것입니다.
+                
+                ■ 수집하는 개인정보 항목
+                
+                안과는 회원가입, 상담, 서비스 신청 등등을 위해 아래와 같은 개인정보를 수집하고 있습니다.
+                
+                ο 수집항목 : 이름 , 로그인ID , 비밀번호 , 자택 전화번호 , 자택 주소 , 휴대전화번호 , 이메일 , 직업 , 서비스 이용기록 , 접속 로그 , 쿠키 , 접속 IP 정보
+                ο 개인정보 수집방법 : 홈페이지(회원가입)
+                
+                ■ 개인정보의 수집 및 이용목적
+                
+                안과는 수집한 개인정보를 다음의 목적을 위해 활용합니다.
+                
+                ο 서비스 제공에 관한 계약 이행 및 서비스 제공
+                콘텐츠 제공
+                ο 회원 관리
+                회원제 서비스 이용에 따른 본인확인 , 개인 식별 , 불량회원의 부정 이용 방지와 비인가 사용 방지 , 가입 의사 확인 , 연령확인 , 만14세 미만 아동 개인정보 수집 시 법정 대리인 동의여부 확인 , 불만처리 등 민원처리 , 고지사항 전달
+                ο 마케팅 및 광고에 활용
+                이벤트 등 광고성 정보 전달 , 인구통계학적 특성에 따른 서비스 제공 및 광고 게재 , 접속 빈도 파악 또는 회원의 서비스 이용에 대한 통계
+                
+                ■ 개인정보의 보유 및 이용기간
+                
+                안과는 개인정보 수집 및 이용목적이 달성된 후에는 예외 없이 해당 정보를 지체 없이 파기합니다. </textarea><br>
+                    <input type="checkbox" name="pensok" class="classBoard">위의 개인정보취급방침에 동의합니다. <br><br></td>
+                </tr>
+                
+                <tr>
+                    <td colspan="6"><img height="1" width="100%" src="about:blank" style="background:#D6D6D6"></td>
+                </tr>
+                
+                <tr height="40">
+                    <td><strong><font color="#424242">이름</font></strong></td>
+                    <td colspan="3"><input type="text" name="usrname" value="" certainly="true" class="classBoard"></td>
+                </tr>              
+                <tr>
+                    <td colspan="6"><img height="1" width="100%" src="about:blank" style="background:#D6D6D6"></td>
+                </tr>                            
+                <tr height="40">
+                    <td><strong>연락처</font></strong></td>
+                    <td>
+                        <select name="phone1">
+                            <option value="010" >010</option>
+                            <option value="011" >011</option>
+                            <option value="016" >016</option>
+                            <option value="017" >017</option>
+                            <option value="018" >018</option>
+                            <option value="019" >019</option>
+                        </select> - 
+                        <input type="text" name="phone2" value="" class="board" certainly="true" onkeydown="onlyNum(this)" onkeyup="onlyNum(this)" onblur="onlyNum(this)" maxlength="4" size="4"> - 
+                        <input type="text" name="phone3" value="" class="board" certainly="true" onkeydown="onlyNum(this)" onkeyup="onlyNum(this)" onblur="onlyNum(this)" maxlength="4" size="4">
+                    </td>
+                </tr>
+                
+                <tr height="1">
+                    <td colspan="6" bgcolor="#E7E7E7"></td>
+                </tr>
+                <tr height="40">
+                    <td><strong><font color="#424242">상담제목</font></strong></td>
+                    <td colspan="3"><input type="text" name="title" value="" maxlength="100" size="50" certainly="true" class="classBoard"></td>
+                </tr>
+                <tr>
+                    <td colspan="6"><img height="1" width="100%" src="about:blank" style="background:#D6D6D6"></td>
+                </tr> 
+                <tr>
+                    <td><strong><font color="#424242">상담내용</font></strong></td>
+                    <td colspan="3"><textarea rows="10" cols="100" certainly="true" class="classBoard"></textarea></td>
+                </tr> 
+                <tr>
+                    <td colspan="6"><img height="1" width="100%" src="about:blank" style="background:#D6D6D6"></td>
+                </tr>
+                <tr height="40">
+                    <td><strong><font color="#424242">공개여부</font></strong></td>
+                    <td colspan="3">
+                        <input type="radio" name="security" value="N" style="border:0;" checked class="classBoard"> 공개
+                        <input type="radio" name="security" value="Y" style="border:0; " class="classBoard" > 비공개
+                    </td>
+                </tr>               
+                <tr>
+                    <td colspan="6"><img height="1" width="100%" src="about:blank" style="background:#D6D6D6"></td>
+                </tr>                
+                <tr height="40" valign="middle">
+                    <td><strong><font color="#424242">비밀번호</font></strong></td>
+                    <td colspan="3">
+                    <input type="password" name="passwd" value="" maxlength="12" certainly="true" class="classBoard">
+                    </td>
+                </tr>            
+            </table>           
+            <table width="100%" border="0" cellpadding="2" cellspacing="1" >
+                <tr>
+                    <td align="center">
+                        <input type="button" value="확인" onclick="precheckF(this.form,'다음 항목을 입력하십시오')" class="classbtn">
+                        &nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="취소" onclick="movePage()" class="classbtn">
+                    </td>
+                </tr>
+            </table>           
+        </form>
+      </div> 			
+   </div>                    
+</div>                      
+<footer id="footer" class="footer" name="footer"></footer>
+<script>
+    $(function(){
+        $("#header").load("header.html"); 
+        $("#footer").load("footer.html"); 
+    });
+    </script>
+</body>
+</html>

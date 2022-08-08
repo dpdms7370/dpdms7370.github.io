@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/icon.png">
+    <link rel="apple-touch-icon" href="../img/icon.png">
+    <!-- 검색(메타)엔진정보 -->
+    <meta name="ulr" content="https://www.jejujeju.co.kr">
+    <meta name="title" content="제주">
+    <meta name="description" content="../img/icon.png">
+    <meta name="keyword" content="제주도,관광,여행,특산품,온라인면세">
+    <!-- 오픈 그래프 -->
+    <meta property="og:ulr" content="https://www.jejujeju.co.kr">
+    <meta property="og:title" content="제주">
+    <meta property="og:description" content="제주도 관광정보, 특산품, 온라인 면세점">
+    <meta property="og:img" content="../img/e1c2f9e4-bf4c-488c-884c-5674f8d8b119.jpg">
+
+    <title>제주도관광홈페이지</title>
+    <!-- 기본 플러그 연결 -->
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+
+    <script src="./js/jquery-1.9.1.js"></script>
+    <!-- <script src="./js/jquery-ui-1.9.2.custom.js"></script>
+    <!-- <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <script src="./js/slick.js"></script> --> -->
+
+    <!-- 웹폰트/폰트 모듈 연결 -->
+    <!-- 구글폰트 복붙-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dongle&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    
+    <!-- 웹아이콘 연결 -->
+    <!-- XEicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- 스타일 초기화 모듈 연결 -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <style>
+        /* 눈누폰트 복붙 */
+        @font-face {
+    font-family: 'HancomUljuBangudae';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205-2@1.0/HancomUljuBangudae.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+        }
+        </style>
+    <style>
+ *{margin: 0; padding: 0;}
+ body, html {font-family: 'HancomUljuBangudae', sans-serif; width: 100%;}  
+ ul {list-style: none;}
+ a{text-decoration: none; }
+
+ i[class*='xi'] {font-size: 30px; color: ;}
+ i[class*='xi']:hover {color:rgb(42, 46, 44);}
+
+ 
+
+ #hd {clear:both; width: 100%; position: fixed; top: 0; left: 0; height: 80px; z-index: 999;
+background-color: rgb(247, 243, 243);}
+ .hd_wrap {clear: both;width: 1280px; ; margin: 0 auto;}
+ .logo { display:block; width: 200px; float: left; margin-top: 20px;}
+ .logo img {display: block; width: 80%; margin-top: 5px; margin-bottom: 10px;}
+ #gnb {float:left; font-size: 30px;  margin-top: 10px;}
+ #gnb > ul > li {float: left; padding-left: 50px; padding-right: 30px; position: relative;
+line-height: 38px; padding-top: 10px; padding-bottom: 40px; }
+
+ #gnb > ul > li > span {display: block; line-height: 5px; cursor: pointer; padding-top: 20px;}
+ #gnb ul li .sub {display: none; position: absolute; left: 10; top: 40;  z-index: 999; padding-left: 10px; width: 150px; height: 210px; padding-top: 5px; margin-top: 20px; background-color: rgba(247, 243, 243)}
+ #gnb ul li:hover .sub { display: block;}
+ #gnb ul li .sub li a { color: black; font-size: 25px;}
+ #gnb ul li .sub li:hover a{ color: rgba(92, 85, 27, 0.815); text-decoration: underline;}
+ #gnb ul li .sub li { line-height: 40px; ; }
+ #gnb ul li:hover span{ color: rgba(9, 139, 226, 0.61);} 
+
+ 
+
+ 
+ #tnb {float:right; padding-top: 10px;  margin-top: 20px;}
+ #tnb a {font-size: 20px; padding-left: 20px;}
+ #tnb a:hover{ color: cornflowerblue; text-decoration: underline;}
+
+ #content {clear: both; width: 100%;}
+ /*바디*/
+ #vs { width: 100%; overflow: hidden; }
+ .img_box { width: 400%; }
+    .img_box li { float:left; width: 25%; position:relative; }
+    .img_box li a { display:block; }
+    .img_box li a img { display:block; width: 100%; height:auto; }
+    .img_box .tit_box { position:absolute; top:100px; left:50px; color:#fff; 
+    text-shadow:1px 1px 1px #333; padding-left: 40px; z-index:30; }
+    .vs_tit { display: inline; font-size:80px; line-height:1.6; }
+    .vs_com { clear: both; font-size:50px; padding-top: 40px;  }
+    .vs_com2{font-size: 30px;}    
+
+    .btn_group {position:absolute; bottom:0px; left:90px; z-index:40; }
+    .btn_group button { display:block; width: 80px; height: 80px; float:left; 
+    background-color: rgba(92, 85, 27, 0.815); border:none; outline: none; color:#fff; }
+    .btn_group button i[class*='xi'] { color: #fff; }
+    .btn_group button:hover i[class*='xi'] { cursor:pointer; color:rgb(25, 207, 65); }
+
+ .m {width: 100%;} 
+ .thema li img { width: 300px; position: relative;}
+ .thema, .t1{float: left; margin-top: auto; font-size: 25px; padding:15px; margin-left: 10px;}
+ .tit{clear: both; padding-left: 800px; font-size: 70px; color: rgb(56, 45, 44); }
+ #dal {margin-left: 40px;}
+
+</style>
+    <style>
+        /* 푸터 */
+            #ft { clear:both; width: 100%; padding-top: 20px; }
+            .ft_wrap { clear:both; width: 1280px; margin: 0 auto; }
+            .fnb { float:left; }
+            .fnb a { display:block; float:left; margin:14px; 
+                margin-left: 0; margin-right: 28px; font-size:12px; }
+            .ft_logo {float: left;}    
+            .snb ul li a { float:right; margin-left: 28px; margin-right: 0px; margin-top: 10px; }
+            .copyright { float: left; padding-bottom: 50px; font-size: 20px; margin-left: 0px; margin-right: 0px; }
+        </style>
+        </head>
+</head>
+<body>
+    <div class="wrap">
+        <header id="hd">
+            <div class="hd_wrap">
+                <a href="index.html" class="logo"><img src="./img/logo2.png" alt="로고"></a>
+                <nav id="gnb">
+                    <ul>
+                        <li>
+                            <span>여행지</span>
+                            <ul class="sub">
+                                <li><a href="https://www.jejujeju.co.kr/tour1.jsp">관광지</a></li>
+                                <li><a href="https://www.jejujeju.co.kr/tour2.jsp">음식</a></li>
+                                <li><a href="https://www.jejujeju.co.kr/tour3.jsp">숙박</a></li>
+                                <li><a href="https://www.jejujeju.co.kr/tour4.jsp">쇼핑</a></li>
+                                <li><a href="https://www.jejujeju.co.kr/tour5.jsp">축제와 행사</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>쇼핑</span>
+                            <ul class="sub">
+                                <li><a href="https://www.jejujeju.co.kr/brand1.jsp">면세점</a></li>
+                                <li><a href="https://www.jejujeju.co.kr/brand2.jsp">탐나오</a></li>
+                                <li><a href="https://www.jejujeju.co.kr/brand3.jsp">이제주몰</a></li>
+                               
+                            </ul>
+                        </li>
+                        <li>
+                            <span>공지사항</span>
+                            <ul class="sub">
+                                <li><a href="https://www.jejujeju.co.kr/notic1.jsp">공지사항</a></li>
+                                <li><a href="https://www.jejujeju.co.kr/notic2.jsp">이벤트</a></li>                             
+                            </ul>
+                        </li>
+                        <li>
+                            <span>나의여행(이용후기)</span>
+                            <ul class="sub">
+                                <li><a href="https://www.jejujeju.co.kr/aafter1.jsp">나의여행일정</a></li>
+                                <li><a href="https://www.jejujeju.co.kr/aafter2.jsp">여행후기</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </nav>
+                <p id="tnb"><a href="login.jsp">로그인</a><a href="">영어</a><a href="">검색</a></p>
+
+                
+            </div>
+
+        </header>
+        <div id="content">  
+            <figure id="vs">
+                <ul class="img_box">
+                    <li>
+                        <a href="">
+                            <img src="./img/s1.jpg" alt="">
+                            <div class="tit_box">
+                                <p class="vs_com">어서오세요, 제주의 봄 입니다.</p>
+                                <p class="vs_com2">2022년 놓치지 말아야 할 제주관광 10선</p>
+                                
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./img/s2.jpg" alt="">
+                            <div class="tit_box">
+                                <p class="vs_com">조천읍-봄편</p>
+                                <p class="vs_com2">제주마을산책4.3길을 걷다</p>
+                                
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./img/s3.jpg" alt="">
+                            <div class="tit_box">
+                                <p class="vs_com">추자도 올레코스.</p>
+                                <p class="vs_com2">2022년 봄시즌 비대면 안심관광지</p>
+                                
+                            </div>
+                        </a>
+                    </li>                  
+                </ul_img_box>
+                <div class="btn_group">
+                    <button class="prev_btn"><i class="xi-angle-left"></i></button>
+                    <button class="next_btn"><i class="xi-angle-right"></i></button>
+                </div>
+                    <script>
+                        $(document).ready(function(){
+                            wd = $(window).width();
+                            var intv = setInterval(function(){
+                                ani1();
+                            }, 5000);
+                            function ani1(){
+                                $(".img_box").not(":animated").animate({"margin-left":-wd+"px"}, 600, function(){
+                                    $(".img_box li").eq(0).appendTo($(".img_box"));
+                                    $(".img_box").css("margin-left","0px");
+                                });
+                            }
+                            function ani2(){
+                                $(".img_box").css("margin-left",-wd+"px");
+                                $(".img_box li:last-child").prependTo($(".img_box"));
+                                $(".img_box").not(":animated").animate({"margin-left":"0px"}, 600);
+                            }
+                            $(".btn_group .next_btn").click(function(){
+                                clearInterval(intv);
+                                ani1();
+                                intv = setInterval(function(){ ani1(); }, 5000);
+                            });
+                            $(".btn_group .prev_btn").click(function(){
+                                clearInterval(intv);
+                                ani2();
+                                intv = setInterval(function(){ ani1(); }, 5000);
+                            });
+                        });    
+                        </script>
+                
+            </figure>
+        </div>
+        <div>
+            <h1 class="tit">제주에 혼저 옵서예</h1>
+            <p class="" name="" id="dal">가정의 달 아이들과 함께하기 좋은 이색체험</p>
+        </div>
+        <div class="m">
+          <ul>
+              <li>
+                <ul class="thema">
+                    <li class="t1"><img src="./img/theme02_0425.jpg" alt=""><p>가파도에 놀러가요</p></img></li>
+                    <li class="t1"><img src="./img/theme03_0425.jpg" alt=""><p>아이들과 함께즐기는 체험</p></img></li>
+                    <li class="t1"><img src="./img/theme04.jpg" alt=""><p>제주도 필드 체험</p></img></li>
+                  </ul>
+              </li>
+              <li>
+                  <ul class="event">
+                      <li class="t2">이벤트1</li>
+                      <li class="t2">이벤트2</li>
+                      <li class="t2">이벤트3</li>
+                      <li class="t2">이벤트4</li>
+                      <li class="t2">이벤트5</li>
+                  </ul>
+              </li>
+          </ul>
+            
+        </div>
+       
+        <footer id="ft">
+            <div class="ft_wrap">
+                <nav class="fnb"><a href="">개인정보처리방침</a><a href="">이용약관</a><a href="">틀린정보신고</a><a href="">제주관광문의</a><a href="">제주관광소식</a><a href="">관광업체등록</a></nav>
+                <nav class="snb">
+                    <ul>
+                        <li><a href="" title="네이버"><i class="xi-naver-square"></i></a></li>
+                        <li><a href="" title="페이스북"><i class="xi-facebook-official"></i></a></li>
+                        <li><a href="" title="인스타그램"><i class="xi-instagram"></i></a></li>
+                        <li><a href="" title="카카오톡"><i class="xi-kakaotalk"></i></a></li>
+                    </ul>
+                </nav>
+                <p class="copyright">(63122) 제주특별자치도 제주시 용문해변 제주웰컴센터
+                    관광문의 : 제주관광공사Tel : 000-000-0000~7FAX : 064-000-0000사업자등록번호 : 123-45-67890
+                    관광불편신고 : 제주안내 120콜센터(국번없이 120번)
+                    Copyright©kimyeeun developer, All rights reserved.</p>
+                   
+            </div>
+
+        </footer>
+    </div>
+    
+</body>
+</html>
+
